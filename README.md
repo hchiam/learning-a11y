@@ -2,6 +2,6 @@
 
 Just one of the things I'm learning. <https://github.com/hchiam/learning>
 
-This repo serves as an easier-to-remember/type link to find this repo faster: 
+This repo's link is easier to remember/type. It serves as a redirect to find this repo faster: 
 
 https://github.com/hchiam/web-accessibility-course-notes
