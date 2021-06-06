@@ -1,0 +1,49 @@
+# Web accessibility (a11y) notes for the [Udemy course "Creating Accessible Websites"](https://www.udemy.com/course/creating-accessible-websites)
+
+These notes are more for myself as a reference. A good introduction would be to start with [my notes for Google's Udacity course on web accessibility](https://github.com/hchiam/web-accessibility-course-notes).
+
+- [example project I made based off of this course](https://codepen.io/hchiam/pen/ExWLExQ)
+- [my certificate of completion](https://www.udemy.com/certificate/UC-55764ea6-40cf-470c-b707-3eae544a4c6a)
+- test a11y right when you create a component
+- tab = next interactive element
+- arrow keys (screenreader) = next element, both interactive or not
+- check still usable with 400% zoom
+- try bigger font-size if you’re stuck with bad colour contrast
+- aria-current=“page” instead of class=“active”
+- outline doesn’t affect sizing, border can affect sizing
+- hamburger menu icon:
+  - button, not a
+  - aria-label or actually show “Menu” (since the hamburger icon isn’t skeuomorphic)
+  - aria-expanded=“true” (update with JS, open by default if JS disabled)
+  - 44px x 44px minimum (WCAG AAA)
+- iframe: title=“accessible title when screen reader can’t read image in iframe”
+- google maps iframe:
+  - title=“123 address” since screen reader can’t read “123 address” in google maps iframe (not even shown in small view, only show location name)
+  - add location name + address + directions next to the google maps iframe, since the google maps iframe isn’t very accessible
+  - add intersection or landmarks too (we’re in, next to, right after the) = printable
+- don’t use placeholder text! just use a separate label
+  - low contrast, otherwise black looks populated, and empty is obviously empty to everyone
+- HTML5 `<input required>` or `<input aria-required=“true”>`
+- don’t just put star next to required fields: first time internet users will be confused
+- put aria-hidden=“true” on an svg inside a link just in case some screen readers actually try to read the svg too
+- aria-hidden=“true” works, aria-hidden by itself does not work
+- avoid using target=“\_blank”
+  - if you have to use target=“\_blank” then add rel=“noopener”
+  - if you have to use target=“\_blank” then add “(opens in new window)” or new tab icon inside with its own aria-label (will be read too)
+    - example: `<a href="#" target="_blank">main link text <span aria-label="(opens in new window)">↗️</span></a>`
+- aria-label —> read just the text in aria-label
+- aria-describedby —> read text first, then read descriptor element text
+- underline = link
+- link => underline
+- link text should make sense without context: screen reader users may need to skip to links
+- `<a href=“/home”><img aria-label=“Homepage”/><a>`
+- replace google maps plugin with image on home screen, since google maps plugin might have (2020) bad screen reader experience
+- google maps plugin needs better accessibility (2020?)
+- test for a11y:
+  - tab
+  - arrow keys and listen to screen reader
+  - lighthouse audit
+  - checklist: <https://www.a11yproject.com/checklist>
+  - high contrast mode (Edge currently has full support for high contrast mode)
+- `<div role=“status” aria-live=“polite”>`
+- live region needs to be "visible" for all screen readers to read it (but you can still visually “hide” it with CSS as long as it’s not display none etc)
