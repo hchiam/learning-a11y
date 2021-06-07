@@ -31,6 +31,7 @@ These notes are more for myself as a reference. A good introduction would be to 
   - if you have to use target=“\_blank” then add rel=“noopener”
   - if you have to use target=“\_blank” then add “(opens in new window)” or new tab icon inside with its own aria-label (will be read too)
     - example: `<a href="#" target="_blank">main link text <span aria-label="(opens in new window)">↗️</span></a>`
+    - [CodePen example of "opens in new window"](https://codepen.io/hchiam/pen/dyvedQj)
 - aria-label —> read just the text in aria-label
 - aria-describedby —> read text first, then read descriptor element text
 - underline = link
