@@ -26,6 +26,7 @@ Deque prep course for IAAP WAS: <https://dequeuniversity.com/curriculum/packages
 - [iframe for scoping JS and CSS?](https://codepen.io/hchiam/pen/ExWpZbb)
 - [Accessible link that opens in new window - v1](https://codepen.io/hchiam/pen/dyvedQj)
 - [Accessible link that opens in new window - v2](https://codepen.io/hchiam/pen/NWpBdmr)
+- [visually hidden spans (del and ins example)](https://codepen.io/hchiam/pen/YzZjQwv)
 
 ## Some a11y-related GitHub repos
 
