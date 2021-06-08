@@ -8,6 +8,8 @@ This repo's link is easier to remember/type. It serves as a redirect to find thi
 
 Start with the above link. Extra notes may be added to this repo too.
 
+Deque prep course for IAAP WAS: <https://dequeuniversity.com/curriculum/packages/iaap-was>
+
 ## Key things I personally focus on most
 
 1. Use [WAVE](https://chrome.google.com/webstore/detail/wave-evaluation-tool/jbbplnpkjmmeebjpijfedlgcdilocofh) or some other automated a11y checker, like [axe DevTools for Firefox](https://addons.mozilla.org/en-US/firefox/addon/axe-devtools) or lighthouse or [axe DevTools for Chrome](https://chrome.google.com/webstore/detail/axe-devtools-web-accessib/lhdoppojpmngadmnindnejefpokejbdd).
