@@ -18,6 +18,7 @@ Start with the above link. Extra notes may be added to this repo too.
 
 - [accessible to-do list](https://codepen.io/hchiam/pen/ExWLExQ)
 - [Accessible Abbreviation Tooltips](https://codepen.io/hchiam/pen/MWpXXLK)
+- [draggable and editable element](https://codepen.io/hchiam/pen/pobxgBo) - try using a mouse, touchpad, or keyboard to move and edit the element!
 - [`aria-labelledby` "loop" (not really)](https://codepen.io/hchiam/pen/VwpBPvx)
 - [definition/description list](https://codepen.io/hchiam/pen/zYZLNzd)
 - [iframe for scoping JS and CSS?](https://codepen.io/hchiam/pen/ExWpZbb)
