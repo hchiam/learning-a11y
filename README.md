@@ -16,21 +16,21 @@ Start with the above link. Extra notes may be added to this repo too.
 
 ## Some a11y-related CodePens
 
-- https://codepen.io/hchiam/pen/ExWLExQ
-- https://codepen.io/hchiam/pen/MWpXXLK
-- https://codepen.io/hchiam/pen/VwpBPvx
-- https://codepen.io/hchiam/pen/zYZLNzd
-- https://codepen.io/hchiam/pen/ExWpZbb
-- https://codepen.io/hchiam/pen/dyvedQj
-- https://codepen.io/hchiam/pen/NWpBdmr
+- [accessible to-do list](https://codepen.io/hchiam/pen/ExWLExQ)
+- [Accessible Abbreviation Tooltips](https://codepen.io/hchiam/pen/MWpXXLK)
+- [`aria-labelledby` "loop" (not really)](https://codepen.io/hchiam/pen/VwpBPvx)
+- [definition/description list](https://codepen.io/hchiam/pen/zYZLNzd)
+- [iframe for scoping JS and CSS?](https://codepen.io/hchiam/pen/ExWpZbb)
+- [Accessible link that opens in new window - v1](https://codepen.io/hchiam/pen/dyvedQj)
+- [Accessible link that opens in new window - v2](https://codepen.io/hchiam/pen/NWpBdmr)
 
 ## Some a11y-related GitHub repos
 
-- https://github.com/hchiam/draggable (make anything draggable and editable)
-- https://github.com/hchiam/keyboard-focus-trap
+- [make anything draggable and editable](https://github.com/hchiam/draggable)
+- [Keyboard focus trap (especially useful for modals)](https://github.com/hchiam/keyboard-focus-trap)
 
 ## Some GitHub repos that I updated to be more accessible
 
-- https://github.com/hchiam/codepen-full-page-link
-- https://github.com/hchiam/slides
-- https://github.com/hchiam/css-boilerplate
+- [Codepen full page link](https://github.com/hchiam/codepen-full-page-link)
+- [Simplified slides editor/presenter](https://github.com/hchiam/slides)
+- [My personal CSS boilerplate](https://github.com/hchiam/css-boilerplate)
