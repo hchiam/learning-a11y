@@ -29,7 +29,7 @@ Start with the above link. Extra notes may be added to this repo too.
 - [make anything draggable and editable](https://github.com/hchiam/draggable)
 - [Keyboard focus trap (especially useful for modals)](https://github.com/hchiam/keyboard-focus-trap)
 
-## Some GitHub repos that I updated to be more accessible
+## Some GitHub projects I updated to be more accessible
 
 - [Codepen full page link](https://github.com/hchiam/codepen-full-page-link)
 - [Simplified slides editor/presenter](https://github.com/hchiam/slides)
