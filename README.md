@@ -122,4 +122,4 @@ Consider: <https://ableplayer.github.io/ableplayer/>
 ## Note on mouse input
 
 - Up event (not on down event) = cancellable before release.
-- Consider click target size. (44px squared or 48px squared min for mobile.)
+- Consider click target size. (For mobile: 44px squared or 48px squared min.)
