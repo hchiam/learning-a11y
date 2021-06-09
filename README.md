@@ -129,3 +129,4 @@ Consider: <https://ableplayer.github.io/ableplayer/>
 - System-wide keyboard accessibility: Mac has a setting that lets you tab to all controls, not just inputs.
 - Move focus to new content triggered by user (example: modal).
 - Move focus to next logical element if element removed (example: closing modal). This means you need to maintain the previously-focused element in memory somehow. (Otherwise focus returns to top of page - really bad.) Also make sure the re-focused element announces something so the user knows what they teleported to.
+- Widget usage instructions with a popup tooltip + aria-label are nice to have when focusing on a custom widget or when users aren't familiar with the standard ARIA keyboard interaction patterns for a widget.
