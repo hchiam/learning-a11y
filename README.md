@@ -122,3 +122,4 @@ Consider: <https://ableplayer.github.io/ableplayer/>
 ## Note on mouse input
 
 - Up event (not on down event) = cancellable before release.
+- Consider click target size.
