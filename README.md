@@ -123,3 +123,7 @@ Consider: <https://ableplayer.github.io/ableplayer/>
 
 - Up event (not on down event) = cancellable before release.
 - Consider click target size. (For mobile: 44px squared or 48px squared min.)
+
+## Note on system-wide keyboard accessibility
+
+- Mac has a setting that lets you tab to all controls, not just inputs.
