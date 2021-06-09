@@ -24,9 +24,10 @@ Deque prep course for IAAP WAS: <https://dequeuniversity.com/curriculum/packages
 - [`aria-labelledby` "loop" (not really)](https://codepen.io/hchiam/pen/VwpBPvx)
 - [definition/description list](https://codepen.io/hchiam/pen/zYZLNzd)
 - [iframe for scoping JS and CSS?](https://codepen.io/hchiam/pen/ExWpZbb)
-- [Accessible link that opens in new window - v1](https://codepen.io/hchiam/pen/dyvedQj)
-- [Accessible link that opens in new window - v2](https://codepen.io/hchiam/pen/NWpBdmr)
-- [Accessible link that opens in new window - v3](https://codepen.io/hchiam/pen/ExWpXEo)
+- Accessible link that opens in new window: (note that using an HTML-only solution instead of CSS `::before`/`::after` `content` basically guarantees compatibility across browser/screen reader combos)
+  - [version 1 of Accessible link that opens in new window](https://codepen.io/hchiam/pen/dyvedQj)
+  - [version 2 of Accessible link that opens in new window](https://codepen.io/hchiam/pen/NWpBdmr)
+  - [version 3 of Accessible link that opens in new window](https://codepen.io/hchiam/pen/ExWpXEo)
 - [visually hidden spans (`<del>` and `<ins>` and `<mark>` example)](https://codepen.io/hchiam/pen/YzZjQwv) for text that is visually crossed out, inserted, or highlighted
 - [Accessible SVG](https://codepen.io/hchiam/pen/ZEejXoE)
 - [Icon Fonts (text acting as an image)](https://codepen.io/hchiam/pen/jOBpaEO)
