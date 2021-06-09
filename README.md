@@ -104,3 +104,7 @@ Consider: <https://ableplayer.github.io/ableplayer/>
 **Note:** It's better to always include a transcript to give access to people who are deafblind, but it also helps with text searches, or if prefer reading quickly over watching.
 
 **Note:** Some people understand a sign language better than captions or transcripts.
+
+## Note on parallax
+
+- Parallax scrolling can decrease usability or even cause dizziness in some people (e.g. those who have vestibular disorders).
