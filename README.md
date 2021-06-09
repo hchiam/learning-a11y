@@ -56,6 +56,6 @@ Deque prep course for IAAP WAS: <https://dequeuniversity.com/curriculum/packages
 
 ### Advanced
 
-- [WebVTT (.vtt)](https://w3c.github.io/webvtt/)
+- [WebVTT (.vtt)](https://w3c.github.io/webvtt/) <-- easily customizable caption settings on the operating system level and consistent across all WebVTT videos in supported browsers
 - [SAMI (.sami or .smi)](https://docs.microsoft.com/en-us/windows/win32/wmp/adding-closed-captions-to-digital-media?redirectedfrom=MSDN)
 - [TTML (.ttml)](https://www.w3.org/TR/ttml1/)
