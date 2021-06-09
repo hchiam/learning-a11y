@@ -124,6 +124,8 @@ Consider: <https://ableplayer.github.io/ableplayer/>
 - Up event (not on down event) = cancellable before release.
 - Consider click target size. (For mobile: 44px squared or 48px squared min.)
 
-## Note on system-wide keyboard accessibility
+## Notes on focus
 
-- Mac has a setting that lets you tab to all controls, not just inputs.
+- System-wide keyboard accessibility: Mac has a setting that lets you tab to all controls, not just inputs.
+- Move focus to new content triggered by user (example: modal).
+- Move focus to next logical element if element removed (example: closing modal). This means you need to maintain the previously-focused element in memory somehow. (Otherwise focus returns to top of page - really bad.) Also make sure the re-focused element announces something so the user knows what they teleported to.
