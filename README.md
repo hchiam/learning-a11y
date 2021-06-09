@@ -73,6 +73,8 @@ Reference: <https://codepen.io/cerovac/full/MWKVVYj>
 | Live Video-only         |          |            |                    |               |
 | Live Audio-only         |          |            |                    |               |
 
+C = Captions. AD = Audio Descriptions. T = Transcript.
+
 **Mnemonic, version 1:** Just what's AA "Must":
 
 - Pre-recorded Multimedia = CAD.
@@ -90,5 +92,11 @@ Reference: <https://codepen.io/cerovac/full/MWKVVYj>
 - Except Multimedia always requires C (whether pre-recorded or not).
 - Pre-recorded requires AD if has Video (so Multimedia counts). "See --> Hear".
 - Pre-recorded requires T only if Audio-only. "Hear --> See". (Caption naturally doesn't make sense in this case, so must use T.)
+
+**Mnemonic, version 4:** Semantic overlap, reworked: _"Pre-recorded + Multi, Video then AD, Audio then C"_.
+
+- "Pre-recorded + Multi": Only Pre-recorded things have "Must", except Multimedia also always requires Captions (whether pre-recorded or live).
+- "If Video then AD": Pre-recorded Video or Multi-media (which contains video) require Audio Descriptions.
+- "If Audio then C, except T for Audio-only": Pre-recorded Audio requires Captions, except Audio-only requires Transcript instead (which is similar to Captions), because there's no video to sync the Captions with.
 
 **Note:** It's better to always include a transcript to give access to people who are deafblind, but it also helps with text searches, or if prefer reading quickly over watching.
