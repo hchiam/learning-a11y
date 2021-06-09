@@ -16,6 +16,15 @@ Deque prep course for IAAP WAS: <https://dequeuniversity.com/curriculum/packages
 2. Use a [screen reader](https://www.youtube.com/watch?v=5R-6WvAihms&list=PLNYkxOF6rcICWx0C9LVWWVqvHlYJyqw7g&index=7).
 3. Tab. Shift+Tab. Enter. (And screen reader + arrow keys.)
 
+## P.O.U.R.
+
+My summary:
+
+- P = Perceivable = can see/hear/feel (like captions)
+- O = Operable = can use (like element focusability + keyboard + time + recovery)
+- U = Understandable = can get meaning (like labels + layout familiarity + meaningful error messages)
+- R = Robust = is flexible/cross-compatible (like mobile versus desktop)
+
 ## Some a11y-related GitHub repos
 
 - [make anything draggable and editable](https://github.com/hchiam/draggable)
