@@ -88,5 +88,5 @@ Reference: <https://codepen.io/cerovac/full/MWKVVYj>
 
 - Pre-recorded has higher requirements than not pre-recorded.
 - Except Multimedia always requires C (whether pre-recorded or not).
-- Pre-recorded requires AD if has Video (so Multimedia counts).
-- Pre-recorded requires T only if Audio-only.
+- Pre-recorded requires AD if has Video (so Multimedia counts). "See --> Hear".
+- Pre-recorded requires T only if Audio-only. "Hear --> See". (Caption naturally doesn't make sense in this case, so must use T.)
