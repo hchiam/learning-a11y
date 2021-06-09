@@ -64,6 +64,8 @@ Deque prep course for IAAP WAS: <https://dequeuniversity.com/curriculum/packages
 
 Reference: <https://codepen.io/cerovac/full/MWKVVYj>
 
+Consider: <https://ableplayer.github.io/ableplayer/>
+
 | Media                   | Captions | Transcript | Audio Descriptions | Sign Language |
 | ----------------------- | -------- | ---------- | ------------------ | ------------- |
 | Pre-recorded Multimedia | Must (C) |            | Must (AD)          |               |
