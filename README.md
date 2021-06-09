@@ -100,3 +100,5 @@ C = Captions. AD = Audio Descriptions. T = Transcript.
 - "If Audio then C, except T for Audio-only": Pre-recorded Audio requires Captions, except Audio-only requires Transcript instead (which is similar to Captions), because there's no video to sync the Captions with.
 
 **Note:** It's better to always include a transcript to give access to people who are deafblind, but it also helps with text searches, or if prefer reading quickly over watching.
+
+**Note:** Some people understand a sign language better than captions or transcripts.
