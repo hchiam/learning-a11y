@@ -108,4 +108,4 @@ Consider: <https://ableplayer.github.io/ableplayer/>
 ## Note on parallax
 
 - Parallax scrolling can decrease usability or even cause dizziness in some people (e.g. those who have vestibular disorders).
-- CSS media query `prefers-reduced-motion` is not currently completely supported, so consider a setting toggle for now, as long as functionality/access is preserved without the disabled animations.
+- CSS media query `prefers-reduced-motion` is currently not universally supported, so consider a including a setting toggle for now, as long as functionality/access is preserved without the removed animations.
