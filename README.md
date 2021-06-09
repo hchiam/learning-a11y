@@ -32,6 +32,7 @@ Deque prep course for IAAP WAS: <https://dequeuniversity.com/curriculum/packages
 - [Accessible SVG](https://codepen.io/hchiam/pen/ZEejXoE)
 - [Icon Fonts (text acting as an image)](https://codepen.io/hchiam/pen/jOBpaEO)
 - [Stylesheet HTML media attribute alternative to CSS media queries](https://codepen.io/hchiam/pen/poeZmVB)
+- [more visually accessible/responsive table](https://codepen.io/hchiam/pen/MWpBMpy)
 
 ## Some a11y-related GitHub repos
 
