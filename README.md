@@ -45,3 +45,17 @@ Deque prep course for IAAP WAS: <https://dequeuniversity.com/curriculum/packages
 - [Codepen full page link](https://github.com/hchiam/codepen-full-page-link)
 - [Simplified slides editor/presenter](https://github.com/hchiam/slides)
 - [My personal CSS boilerplate](https://github.com/hchiam/css-boilerplate)
+
+## Caption file formats
+
+### Basic
+
+- [SubRip (.srt)](https://en.wikipedia.org/wiki/SubRip#SubRip_text_file_format)
+- [SubViewer (.sub or .sbv)](https://wiki.videolan.org/SubViewer)
+- [LRC (.lrc)](https://en.wikipedia.org/wiki/LRC_%28file_format%29)
+
+### Advanced
+
+- [WebVTT (.vtt)](https://w3c.github.io/webvtt/)
+- [SAMI (.sami or .smi)](https://docs.microsoft.com/en-us/windows/win32/wmp/adding-closed-captions-to-digital-media?redirectedfrom=MSDN)
+- [TTML (.ttml)](https://www.w3.org/TR/ttml1/)
