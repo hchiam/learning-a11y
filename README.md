@@ -62,6 +62,8 @@ Deque prep course for IAAP WAS: <https://dequeuniversity.com/curriculum/packages
 
 ## Media Accessibility Decision Matrix (WCAG Level AA "Must"s)
 
+Reference: <https://codepen.io/cerovac/full/MWKVVYj>
+
 | Media                   | Captions | Transcript | Audio Descriptions | Sign Language |
 | ----------------------- | -------- | ---------- | ------------------ | ------------- |
 | Pre-recorded Multimedia | Must (C) |            | Must (AD)          |               |
