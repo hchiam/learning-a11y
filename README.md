@@ -16,6 +16,17 @@ Deque prep course for IAAP WAS: <https://dequeuniversity.com/curriculum/packages
 2. Use a [screen reader](https://www.youtube.com/watch?v=5R-6WvAihms&list=PLNYkxOF6rcICWx0C9LVWWVqvHlYJyqw7g&index=7).
 3. Tab. Shift+Tab. Enter. (And screen reader + arrow keys.)
 
+## Some a11y-related GitHub repos
+
+- [make anything draggable and editable](https://github.com/hchiam/draggable)
+- [Keyboard focus trap (especially useful for modals)](https://github.com/hchiam/keyboard-focus-trap)
+
+## Some GitHub projects I updated to be more accessible
+
+- [Codepen full page link](https://github.com/hchiam/codepen-full-page-link)
+- [Simplified slides editor/presenter](https://github.com/hchiam/slides)
+- [My personal CSS boilerplate](https://github.com/hchiam/css-boilerplate)
+
 ## Some a11y-related CodePens
 
 - [accessible to-do list](https://codepen.io/hchiam/pen/ExWLExQ)
@@ -34,17 +45,6 @@ Deque prep course for IAAP WAS: <https://dequeuniversity.com/curriculum/packages
 - [Stylesheet HTML media attribute alternative to CSS media queries](https://codepen.io/hchiam/pen/poeZmVB)
 - [more visually accessible/responsive table](https://codepen.io/hchiam/pen/MWpBMpy)
 - [accessible font size tips](https://codepen.io/hchiam/pen/JjWBQwv)
-
-## Some a11y-related GitHub repos
-
-- [make anything draggable and editable](https://github.com/hchiam/draggable)
-- [Keyboard focus trap (especially useful for modals)](https://github.com/hchiam/keyboard-focus-trap)
-
-## Some GitHub projects I updated to be more accessible
-
-- [Codepen full page link](https://github.com/hchiam/codepen-full-page-link)
-- [Simplified slides editor/presenter](https://github.com/hchiam/slides)
-- [My personal CSS boilerplate](https://github.com/hchiam/css-boilerplate)
 
 ## Caption file formats
 
