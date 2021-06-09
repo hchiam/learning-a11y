@@ -123,6 +123,7 @@ Consider: <https://ableplayer.github.io/ableplayer/>
 
 - Up event (not on down event) = cancellable before release.
 - Consider click target size. (For mobile: 44px squared or 48px squared min.)
+- A click event is accessible to mouse **_and_** touch **_and_** keyboard! (As opposed to `onmouseup` or `ontouchend` or `onkeyup`.)
 
 ## Notes on focus
 
