@@ -31,6 +31,7 @@ Deque prep course for IAAP WAS: <https://dequeuniversity.com/curriculum/packages
 - [visually hidden spans (`<del>` and `<ins>` and `<mark>` example)](https://codepen.io/hchiam/pen/YzZjQwv) for text that is visually crossed out, inserted, or highlighted
 - [Accessible SVG](https://codepen.io/hchiam/pen/ZEejXoE)
 - [Icon Fonts (text acting as an image)](https://codepen.io/hchiam/pen/jOBpaEO)
+- [Stylesheet HTML media attribute alternative to CSS media queries](https://codepen.io/hchiam/pen/poeZmVB)
 
 ## Some a11y-related GitHub repos
 
