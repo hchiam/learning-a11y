@@ -90,3 +90,5 @@ Reference: <https://codepen.io/cerovac/full/MWKVVYj>
 - Except Multimedia always requires C (whether pre-recorded or not).
 - Pre-recorded requires AD if has Video (so Multimedia counts). "See --> Hear".
 - Pre-recorded requires T only if Audio-only. "Hear --> See". (Caption naturally doesn't make sense in this case, so must use T.)
+
+**Note:** It's better to always include a transcript to give access to people who are deafblind, but it also helps with text searches, or if prefer reading quickly over watching.
