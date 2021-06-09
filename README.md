@@ -73,7 +73,7 @@ Reference: <https://codepen.io/cerovac/full/MWKVVYj>
 | Live Video-only         |          |            |                    |               |
 | Live Audio-only         |          |            |                    |               |
 
-C = Captions. AD = Audio Descriptions. T = Transcript.
+"CAST": C = Captions. AD = Audio Descriptions. T = Transcript. S = Sign Language.
 
 **Mnemonic, version 1:** Just what's AA "Must":
 
