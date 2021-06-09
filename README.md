@@ -59,3 +59,32 @@ Deque prep course for IAAP WAS: <https://dequeuniversity.com/curriculum/packages
 - [WebVTT (.vtt)](https://w3c.github.io/webvtt/) <-- easily customizable caption settings on the operating system level and consistent across all WebVTT videos in supported browsers
 - [SAMI (.sami or .smi)](https://docs.microsoft.com/en-us/windows/win32/wmp/adding-closed-captions-to-digital-media?redirectedfrom=MSDN)
 - [TTML (.ttml)](https://www.w3.org/TR/ttml1/)
+
+## Media Accessibility Decision Matrix (WCAG Level AA "Must"s)
+
+| Media                   | Captions | Transcript | Audio Descriptions | Sign Language |
+| ----------------------- | -------- | ---------- | ------------------ | ------------- |
+| Pre-recorded Multimedia | Must (C) |            | Must (AD)          |               |
+| Pre-recorded Video-only |          |            | Must (AD)          |               |
+| Pre-recorded Audio-only |          | Must (T)   |                    |               |
+| Live Multimedia         | Must (C) |            |                    |               |
+| Live Video-only         |          |            |                    |               |
+| Live Audio-only         |          |            |                    |               |
+
+**Mnemonic, version 1:** Just what's AA "Must":
+
+- Pre-recorded Multimedia = CAD.
+- Pre-recorded Video-only = AD.
+- Pre-recorded Audio-only = T.
+- Live Multimedia = C.
+
+**Mnemonic, version 2:** Just letters:
+
+- PMCAD. PVAD. PAT. LMC.
+
+**Mnemonic, version 3:** Semantic overlap:
+
+- Pre-recorded has higher requirements than not pre-recorded.
+- Except Multimedia always requires C (whether pre-recorded or not).
+- Pre-recorded requires AD if has Video (so Multimedia counts).
+- Pre-recorded requires T only if Audio-only.
