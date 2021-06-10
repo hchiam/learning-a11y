@@ -165,4 +165,51 @@ Consider: <https://ableplayer.github.io/ableplayer/>
 - VoiceOver works best with Safari.
 - ChromeVox works on Chrome.
 - Consider telling users that content is still loading with things like `alt="Content loading"` (but don't go overboard with `aria-live` unless it's a really slow process).
-- "Please wait" message: focus on it or `aria-live` it. Intentionally pause before resetting focus, in case the delay is shorter than expected (consider "Please wait. Here's some content that already loaded but sounds like part of the interstitial message.").
+
+## Notes on new content or SPAs (Single-Page Apps)
+
+- "Please wait" message (or new content for SPAs): focus on it or `aria-live` it. Plan some shared method to manage focus or to announce link/route events. Consider intentional pause before resetting focus, in case the delay is shorter than expected (consider "Please wait. Here's some content that already loaded but sounds like part of the interstitial message.") and to avoid timing issues.
+- In VoiceOver, focus needs to be (re)sent to an element for it to be announced, even if its text changed (so temporarily send focus to an empty container and back).
+
+  ```js
+  event.preventDefault();
+  emptyContainerForTemporaryFocus.focus();
+  oldContent.empty();
+  populateNewContent();
+  updateBrowserHistory(newUrl, newTitle);
+  var delayForIOS = 1000;
+  setTimeout(() => {
+    newHeading.focus();
+  }, delayForIOS);
+  ```
+
+- For SPA links: remember to systematically update browser history so the back button works.
+
+  ```js
+  function updateBrowserHistory(newUrl, newTitle) {
+    history.pushState(
+      {
+        url: newUrl,
+        title: newTitle,
+      },
+      newTitle,
+      newUrl
+    );
+  }
+  ```
+
+  ```js
+  $(window).on("popstate", function (event) {
+    var state = event.originalEvent.state;
+    var wasBackOrForwardHit = state !== null;
+    if (wasBackOrForwardHit) {
+      oldContent.empty();
+      document.title = state.title; // screen reader will read <title> first (good place for status update)
+      populateNewContent();
+      var delayForIOS = 1000;
+      setTimeout(() => {
+        newHeading.focus();
+      }, delayForIOS);
+    }
+  });
+  ```
