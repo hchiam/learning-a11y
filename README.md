@@ -239,3 +239,26 @@ Consider: <https://ableplayer.github.io/ableplayer/>
     <input type="submit" value="Search">
   </form>
   ```
+
+## Notes on ARIA roles
+
+- Ctrl+F or Cmd+F for ARIA roles and ARIA attributes in this [Role Data Model](https://www.w3.org/TR/wai-aria/img/rdf_model.svg)
+  - On top: ARIA roles. Example: `role="checkbox"`.
+  - On bottom: ARIA attributes. Example: `aria-checked="true"`.
+- Only use ARIA roles+attributes if you need to. Better to use native built-ins.
+- For modals, you'll likely need to put `role="document"` to wrap the text content like `<p>` etc. when the modal container has `role="dialog"`. This is because `role="dialog"` turns some screen readers to application mode (basically inherits `role="application"`), which ignores text that doesn't have `tabindex="0"` set, so you may need `role="document"` to turn those screen readers back to document mode.
+- `role="application"` gives developers more freedom but also more responsibility. It turns off most page navigation features, which lets you define custom keyboard logic, but now you might need to re-implement a bunch of things.
+
+  - Notably, application mode does not turn off the normal behaviour of: Tab for focus, Enter/Return, space bar, or arrow keys (on selects or radios).
+
+  - So you sometimes might need to do this: (unless you set `tabindex="0"` on text elements, which may mislead users to think they're on buttons)
+
+  ```html
+  <div role="application">
+    <div role="document"></div>
+  </div>
+  ```
+
+  - `role="dialog"` and `role="alertdialog"` and `role="tablist"` automatically trigger application mode and hence keyboard limitations/freedoms.
+
+- You can use `role="math"` and `aria-label=""` on a `<div>` that wraps MathML markup with a `<math>` element, but MathML isn't universally supported. MathJax may help with MathML markup support for all browsers.
