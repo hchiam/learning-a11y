@@ -169,19 +169,19 @@ Consider: <https://ableplayer.github.io/ableplayer/>
   - And mobile TalkBack (Android) and VoiceOver (iOS).
   - There are screen reader survey stats (2019) on [primary screen reader](https://webaim.org/projects/screenreadersurvey8/#primary) and [screen reader usage](https://webaim.org/projects/screenreadersurvey8/#used) and [primary browser](https://webaim.org/projects/screenreadersurvey8/#browsers) and [screen reader + browser combos](https://webaim.org/projects/screenreadersurvey8/#browsercombos) and [OS](https://webaim.org/projects/screenreadersurvey8/#os) and [mobile](https://webaim.org/projects/screenreadersurvey8/#mobile) and [headings vs find](https://webaim.org/projects/screenreadersurvey8/#finding) and [multi-language use](https://webaim.org/projects/screenreadersurvey8/#language).
 - suggested screen reader + browser/device combos:
-  - JAWS with Chrome/IE
-  - NVDA with Firefox/Chrome
+  - [JAWS](https://www.freedomscientific.com/products/software/jaws/) with Chrome/IE
+  - [NVDA](http://www.nvaccess.org/download/) with Firefox/Chrome
   - Narrator with Edge
   - VoiceOver with Safari (macOS)
   - VoiceOver with Safari (iOS)
   - TalkBack with Chrome (Android)
 - Most screen readers can automatically or manually switch between different modes depending on context, to let you type extra or different commands to do things useful in context: document/reading mode, table mode, forms mode, app mode, virtual cursor mode, focus mode, etc. For example, you wouldn't want the next header key shortcut H to trigger when typing the letter H into a form input. Modes switch automatically in VoiceOver.
-- JAWS seems to cover the most browsers, _including IE_.
+- JAWS seems to cover the most browsers, _including IE_. It also has cursor options. But [JAWS is expensive](https://sheribyrnehaber.medium.com/accessibility-best-practices-for-screenreader-testing-e35c5df9cecb). So NVDA seems best to me to use, especially with the [rise in popularity of NVDA](https://webaim.org/projects/screenreadersurvey8/#used).
 - JAWS works well with Chrome, Firefox, Edge, and IE.
 - NVDA works well with Chrome, Firefox, and Edge. But NVDA has recently gained more popularity than JAWS ([2019 screen reader survey](https://webaim.org/projects/screenreadersurvey8/#primary)).
-- Narrator works best with Edge.
+- Narrator works best with Edge. It also has a Developer mode that lets you see only the things currently exposed to the screen reader.
 - VoiceOver works best with Safari.
-- ChromeVox works on Chrome.
+- [ChromeVox](https://support.google.com/chromebook/answer/7031755) works on Chrome and ChromeOS/Chromebooks.
 - Consider telling users that content is still loading with things like `alt="Content loading"` (but don't go overboard with `aria-live` unless it's a really slow process).
 - Using `visibility: hidden;`, `display: none;`, or attribute `hidden` will hide the element visually but also hides it from screen readers, so you'll need to resort to clipping or positioning or `aria-label`. See my notes on [hiding elements visually and/or in the Accessibility Tree](https://github.com/hchiam/web-accessibility-course-notes#hidingshowing-only-for-accessibility-tree-at).
 
