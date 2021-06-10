@@ -59,6 +59,9 @@ My summary:
 - [Support Both Legacy JS and Modern JS Without Slowing All Browsers](https://codepen.io/hchiam/pen/mdWGLNE)
 - [Deque ARIA patterns CSS+JS](https://codepen.io/hchiam/pen/ExWedQx)
 
+<details>
+<summary>More notes (click to expand)</summary>
+
 ## Caption file formats
 
 ### Basic
@@ -309,3 +312,5 @@ Consider: <https://ableplayer.github.io/ableplayer/>
 
 - <https://codepen.io/hchiam/pen/gOmdBBo>
 - <https://codepen.io/hchiam/pen/ExWedQx>
+
+</details>
