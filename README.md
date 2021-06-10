@@ -164,10 +164,14 @@ Consider: <https://ableplayer.github.io/ableplayer/>
 
 ## Notes on screen readers
 
+- Test dynamic content with at least 2 screen readers, since there can be big differences in how they handle dynamic content.
+  - And don't forget about different browser combinations.
+  - And mobile TalkBack (Android) and VoiceOver (iOS).
+  - There are screen reader survey stats (2019) on [primary screen reader](https://webaim.org/projects/screenreadersurvey8/#primary) and [screen reader usage](https://webaim.org/projects/screenreadersurvey8/#used) and [primary browser](https://webaim.org/projects/screenreadersurvey8/#browsers) and [screen reader + browser combos](https://webaim.org/projects/screenreadersurvey8/#browsercombos) and [OS](https://webaim.org/projects/screenreadersurvey8/#os) and [mobile](https://webaim.org/projects/screenreadersurvey8/#mobile) and [headings vs find](https://webaim.org/projects/screenreadersurvey8/#finding) and [multi-language use](https://webaim.org/projects/screenreadersurvey8/#language).
 - Most screen readers can automatically or manually switch between different modes depending on context, to let you type extra or different commands to do things useful in context: document/reading mode, table mode, forms mode, app mode, virtual cursor mode, focus mode, etc. For example, you wouldn't want the next header key shortcut H to trigger when typing the letter H into a form input. Modes switch automatically in VoiceOver.
 - JAWS seems to cover the most browsers, _including IE_.
 - JAWS works well with Chrome, Firefox, Edge, and IE.
-- NVDA works well with Chrome, Firefox, and Edge.
+- NVDA works well with Chrome, Firefox, and Edge. But NVDA has recently gained more popularity than JAWS ([2019 screen reader survey](https://webaim.org/projects/screenreadersurvey8/#primary)).
 - Narrator works best with Edge.
 - VoiceOver works best with Safari.
 - ChromeVox works on Chrome.
