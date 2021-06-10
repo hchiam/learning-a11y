@@ -132,6 +132,7 @@ Consider: <https://ableplayer.github.io/ableplayer/>
 - Move focus to new content triggered by user (example: modal), otherwise it's disorienting (example: screen reader users tend to explore forms before filling them out, triggering blur).
 - Move focus to next logical element if element removed (example: closing modal). This means you need to maintain the previously-focused element in memory somehow. (Otherwise focus returns to top of page - really bad.) Also make sure the re-focused element announces something so the user knows what they teleported to.
 - Widget usage instructions with a popup tooltip + aria-label are nice to have when focusing on a custom widget or when users aren't familiar with the standard ARIA keyboard interaction patterns for a widget.
+- Make infinite scrolling the last element on the page, or let users "escape", or let users decide to load more.
 
 ## Notes on touch input
 
