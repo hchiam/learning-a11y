@@ -55,6 +55,7 @@ My summary:
 - [more visually accessible/responsive table](https://codepen.io/hchiam/pen/MWpBMpy)
 - [accessible font size tips](https://codepen.io/hchiam/pen/JjWBQwv)
 - [accessible form (group label)](https://codepen.io/hchiam/pen/GRWXjZK)
+- [MathJax example](https://codepen.io/hchiam/pen/WNpgzMe)
 
 ## Caption file formats
 
@@ -261,4 +262,5 @@ Consider: <https://ableplayer.github.io/ableplayer/>
 
   - `role="dialog"` and `role="alertdialog"` and `role="tablist"` automatically trigger application mode and hence keyboard limitations/freedoms.
 
-- You can use `role="math"` and `aria-label=""` on a `<div>` that wraps MathML markup with a `<math>` element, but MathML isn't universally supported. MathJax may help with MathML markup support for all browsers.
+- You can use `role="math"` and `aria-label=""` on a `<div>` that wraps MathML markup with a `<math>` element, but MathML isn't universally supported. Or just use MathJax, which also happens to be able to help with MathML markup support for all browsers.
+  - [MathJax example](https://codepen.io/hchiam/pen/WNpgzMe)
