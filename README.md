@@ -142,3 +142,8 @@ Consider: <https://ableplayer.github.io/ableplayer/>
 
 - `aria-describedby` won't work on `<fieldset>` or `<legend>`, so avoid having text in the middle of a form (users likely will tab and miss the text), and instead put the text before the form, or associate the text with one or more of the inputs with `aria-describedby` on them.
 - Make sure instructions and labels are _next to_ their related inputs (both visual and cognitive effects). Otherwise they can be hidden/shown with a button, _instead of_ making the text small.
+- Tell screen reader users of required fields with `aria-required="true"` (or `<... required>` which adds browser behaviour, but does so inconsistently, and may conflict with your custom form validation behaviours). Either way, also include visual indicators for sighted users.
+- `aria-invalid="true"` and `aria-describedby="error_description"` on the inputs
+- `<a href="#email">Go to the first field with an error to fix it.</a>`
+- `autocomplete="current-password"` - see <https://www.w3.org/TR/WCAG21/#input-purposes>
+- Example: <https://dequeuniversity.com/assets/html/module-forms/progressive/good/index.html>
