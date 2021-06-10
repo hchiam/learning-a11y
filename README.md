@@ -56,6 +56,7 @@ My summary:
 - [accessible font size tips](https://codepen.io/hchiam/pen/JjWBQwv)
 - [accessible form (group label)](https://codepen.io/hchiam/pen/GRWXjZK)
 - [MathJax example](https://codepen.io/hchiam/pen/WNpgzMe)
+- [Support Both Legacy JS and Modern JS Without Slowing All Browsers](https://codepen.io/hchiam/pen/mdWGLNE)
 
 ## Caption file formats
 
