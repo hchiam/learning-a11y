@@ -94,6 +94,35 @@
       </p>
     </div>
 
+    <p>
+      <button class="deque-button" id="deque-button-primary-html">
+        Primary Button (HTML)
+      </button>
+
+      <span
+        role="button"
+        class="deque-button deque-button-aria"
+        id="deque-button-primary-aria"
+        >Primary Button (ARIA)</span
+      >
+    </p>
+    <p>
+      <button
+        class="deque-button deque-button-secondary"
+        id="deque-button-secondary-html"
+        type="button"
+      >
+        Secondary Button (HTML)
+      </button>
+
+      <span
+        role="button"
+        class="deque-button deque-button-secondary deque-button-aria"
+        id="deque-button-secondary-aria"
+        >Secondary Button (ARIA)</span
+      >
+    </p>
+
     <h2>Links:</h2>
 
     <ul>
@@ -178,6 +207,43 @@
         >https://codepen.io/hchiam/pen/gOmdBBo</a
       >
     </p>
+
     <script src="https://dequeuniversity.com/assets/js/patterns/deque-patterns.min.js"></script>
+    <script>
+      // custom code for the buttons:
+
+      /* Specify which buttons */
+      var primaryHtml = document.getElementById("deque-button-primary-html");
+      var primaryAria = document.getElementById("deque-button-primary-aria");
+      var secondaryHtml = document.getElementById(
+        "deque-button-secondary-html"
+      );
+      var secondaryAria = document.getElementById(
+        "deque-button-secondary-aria"
+      );
+
+      /* Define the functionality for the buttons */
+      function primaryHtmlHandler() {
+        alert("You clicked the primary HTML button");
+      }
+
+      function primaryAriaHandler() {
+        alert("You clicked the primary ARIA button");
+      }
+
+      function secondaryHtmlHandler() {
+        alert("You clicked the secondary HTML button");
+      }
+
+      function secondaryAriaHandler() {
+        alert("You clicked the secondary ARIA button");
+      }
+
+      /* Initialize buttons */
+      deque.button.initializeButton(primaryHtml, primaryHtmlHandler);
+      deque.button.initializeButton(primaryAria, primaryAriaHandler);
+      deque.button.initializeButton(secondaryHtml, secondaryHtmlHandler);
+      deque.button.initializeButton(secondaryAria, secondaryAriaHandler);
+    </script>
   </body>
 </html>
