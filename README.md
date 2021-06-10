@@ -136,3 +136,8 @@ Consider: <https://ableplayer.github.io/ableplayer/>
 ## Note on touch input
 
 - Make sure gestures can also be done with taps (for people with mobility issues).
+
+## Notes on forms
+
+- `aria-describedby` won't work on `<fieldset>` or `<legend>`, so avoid having text in the middle of a form (users likely will tab and miss the text), and instead put the text before the form, or associate the text with one or more of the inputs with `aria-describedby` on them.
+- Make sure instructions and labels are _next to_ their related inputs (both visual and cognitive effects). Otherwise they can be hidden/shown with a button, _instead of_ making the text small.
