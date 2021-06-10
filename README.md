@@ -152,3 +152,13 @@ Consider: <https://ableplayer.github.io/ableplayer/>
 - Confirm after submitting (set focus _after_ page load to avoid issues with parsing timing).
 - Consider indicating form success/error in `<title>` = first thing user hears on new page.
 - Consider `aria-live` with 2-second debounce for password strength. (On blur won't work because the new focus will likely get announced instead.)
+
+## Notes on screen readers
+
+- Most screen readers can automatically or manually switch between different modes depending on context, to let you type extra or different commands to do things useful in context: document/reading mode, table mode, forms mode, app mode, virtual cursor mode, focus mode, etc. For example, you wouldn't want the next header key shortcut H to trigger when typing the letter H into a form input. Modes switch automatically in VoiceOver.
+- JAWS seems to cover the most browsers, _including IE_.
+- JAWS works well with Chrome, Firefox, Edge, and IE.
+- NVDA works well with Chrome, Firefox, and Edge.
+- Narrator works best with Edge.
+- VoiceOver works best with Safari.
+- ChromeVox works on Chrome.
