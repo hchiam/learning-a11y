@@ -213,3 +213,28 @@ Consider: <https://ableplayer.github.io/ableplayer/>
     }
   });
   ```
+
+## Notes on accessible name calculation algorithm
+
+### Basically
+
+1. `aria-labelledby`
+2. `aria-label`
+3. text <-- (but for implementation, go for this option first)
+4. (`title` but only kinda works for some users)
+
+### Fun facts
+
+- Note that description !== label.
+- Label = replaces the element's original text.
+- Description = read after label as extra info (with a pause).
+- `aria-labelledby="can have multiple IDs for labels"`
+- Keep in mind that `aria-label` is not consistently supported for some non-focusable elements, screen reader versions/modes, or browser versions.
+- Use `aria-label` on the common search box, since it's usually focused before the button, otherwise it's not immediately obvious what the `input` is for:
+
+  ```js
+  <form action="#" role="search">
+    <input aria-label="Search" name="search" type="search">
+    <input type="submit" value="Search">
+  </form>
+  ```
