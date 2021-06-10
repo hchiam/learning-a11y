@@ -129,7 +129,7 @@ Consider: <https://ableplayer.github.io/ableplayer/>
 ## Notes on focus
 
 - System-wide keyboard accessibility: Mac has a setting that lets you tab to all controls, not just inputs.
-- Move focus to new content triggered by user (example: modal).
+- Move focus to new content triggered by user (example: modal), otherwise it's disorienting (example: screen reader users tend to explore forms before filling them out, triggering blur).
 - Move focus to next logical element if element removed (example: closing modal). This means you need to maintain the previously-focused element in memory somehow. (Otherwise focus returns to top of page - really bad.) Also make sure the re-focused element announces something so the user knows what they teleported to.
 - Widget usage instructions with a popup tooltip + aria-label are nice to have when focusing on a custom widget or when users aren't familiar with the standard ARIA keyboard interaction patterns for a widget.
 
@@ -147,3 +147,7 @@ Consider: <https://ableplayer.github.io/ableplayer/>
 - `<a href="#email">Go to the first field with an error to fix it.</a>`
 - `autocomplete="current-password"` - see <https://www.w3.org/TR/WCAG21/#input-purposes>
 - Example: <https://dequeuniversity.com/assets/html/module-forms/progressive/good/index.html>
+- Custom form element: make sure it has a Name, Role, and Attribute (i.e. Label, Role, and State.). Anything that can't be communicated via those things should go into an `aria-live` region.
+- Confirm before submitting (and enable fixing).
+- Confirm after submitting (set focus _after_ page load to avoid issues with parsing timing). Consider `<title>` = first thing user hears on new page.
+- Consider `aria-live` with 2-second debounce for password strength. (On blur won't work because the new focus will likely get announced instead.)
