@@ -164,6 +164,7 @@ Consider: <https://ableplayer.github.io/ableplayer/>
 
 ## Notes on screen readers
 
+- [Common screen readers and common keyboard shortcuts for them](https://dequeuniversity.com/assets/pdf/screenreaders/screen-readers-commands.pdf).
 - Test dynamic content with at least 2 screen readers, since there can be big differences in how they handle dynamic content.
   - And don't forget about different browser combinations.
   - And mobile TalkBack (Android) and VoiceOver (iOS).
