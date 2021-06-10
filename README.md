@@ -55,7 +55,6 @@ My summary:
 - [more visually accessible/responsive table](https://codepen.io/hchiam/pen/MWpBMpy)
 - [accessible font size tips](https://codepen.io/hchiam/pen/JjWBQwv)
 - [accessible form (group label)](https://codepen.io/hchiam/pen/GRWXjZK)
-- .
 
 ## Caption file formats
 
