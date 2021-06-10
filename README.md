@@ -115,12 +115,12 @@ Consider: <https://ableplayer.github.io/ableplayer/>
 
 **Note:** Some people understand a sign language better than captions or transcripts.
 
-## Note on parallax
+## Notes on parallax
 
 - Parallax scrolling can decrease usability or even cause dizziness in some people (e.g. those who have vestibular disorders).
 - CSS media query `prefers-reduced-motion` is currently not universally supported, so consider a including a setting toggle for now, as long as functionality/access is preserved without the removed animations.
 
-## Note on mouse input
+## Notes on mouse input
 
 - Up event (not on down event) = cancellable before release.
 - Consider click target size. (For mobile: 44px squared or 48px squared min.)
@@ -133,9 +133,10 @@ Consider: <https://ableplayer.github.io/ableplayer/>
 - Move focus to next logical element if element removed (example: closing modal). This means you need to maintain the previously-focused element in memory somehow. (Otherwise focus returns to top of page - really bad.) Also make sure the re-focused element announces something so the user knows what they teleported to.
 - Widget usage instructions with a popup tooltip + aria-label are nice to have when focusing on a custom widget or when users aren't familiar with the standard ARIA keyboard interaction patterns for a widget.
 
-## Note on touch input
+## Notes on touch input
 
 - Make sure gestures can also be done with taps (for people with mobility issues).
+- A click event is accessible to mouse **_and_** touch **_and_** keyboard! (As opposed to `onmouseup` or `ontouchend` or `onkeyup`.)
 
 ## Notes on forms
 
