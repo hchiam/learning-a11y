@@ -140,7 +140,7 @@ Consider: <https://ableplayer.github.io/ableplayer/>
 
 ## Notes on forms
 
-- `aria-describedby` won't work on `<fieldset>` or `<legend>`, so avoid having text in the middle of a form (users likely will tab and miss the text), and instead put the text before the form, or associate the text with one or more of the inputs with `aria-describedby` on them.
+- `aria-describedby` won't work on `<fieldset>` or `<legend>`, so avoid having _non-label/non-focusable_ text in the middle of a form (users likely will tab and miss the text), and instead put the text before the form, or associate the text with one or more of the inputs with `aria-describedby` on them.
 - Make sure instructions and labels are _next to_ their related inputs (both visual and cognitive effects). Otherwise they can be hidden/shown with a button, _instead of_ making the text small.
 - Tell screen reader users of required fields with `aria-required="true"` (or `<... required>` which adds browser behaviour, but does so inconsistently, and may conflict with your custom form validation behaviours). Either way, also include visual indicators for sighted users.
 - `aria-invalid="true"` and `aria-describedby="error_description"` on the inputs
@@ -152,6 +152,7 @@ Consider: <https://ableplayer.github.io/ableplayer/>
 - Confirm after submitting (set focus _after_ page load to avoid issues with parsing timing).
 - Consider indicating form success/error in `<title>` = first thing user hears on new page.
 - Consider `aria-live` with 2-second debounce for password strength. (On blur won't work because the new focus will likely get announced instead.)
+- Tab, Shift + Tab, Enter/Spacebar, arrow keys, (for `<select>`:) Alt/Option + Down arrow and then arrow keys and then Enter
 
 ## Notes on screen readers
 
