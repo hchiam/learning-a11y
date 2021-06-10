@@ -163,3 +163,4 @@ Consider: <https://ableplayer.github.io/ableplayer/>
 - Narrator works best with Edge.
 - VoiceOver works best with Safari.
 - ChromeVox works on Chrome.
+- Consider telling users that content is still loading with things like `alt="Content loading"` (but don't go overboard with `aria-live` unless it's a really slow process).
