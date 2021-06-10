@@ -165,3 +165,4 @@ Consider: <https://ableplayer.github.io/ableplayer/>
 - VoiceOver works best with Safari.
 - ChromeVox works on Chrome.
 - Consider telling users that content is still loading with things like `alt="Content loading"` (but don't go overboard with `aria-live` unless it's a really slow process).
+- "Please wait" message: focus on it or `aria-live` it. Intentionally pause before resetting focus, in case the delay is shorter than expected (consider "Please wait. Here's some content that already loaded but sounds like part of the interstitial message.").
