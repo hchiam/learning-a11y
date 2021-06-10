@@ -245,7 +245,7 @@ Consider: <https://ableplayer.github.io/ableplayer/>
 
 - Ctrl+F or Cmd+F for ARIA roles and ARIA attributes in this [Role Data Model](https://www.w3.org/TR/wai-aria/img/rdf_model.svg)
   - On top: ARIA roles. Example: `role="checkbox"`.
-  - On bottom: ARIA attributes. Example: `aria-checked="true"`.
+  - On bottom: ARIA attributes. Example: `aria-checked="true"`. (Link: [descriptions of ARIA attributes](https://www.w3.org/TR/wai-aria/#global_states))
   - (Note: some roles are "abstract" and can't actually be used in the code.)
 - Only use ARIA roles+attributes if you need to. Better to use native built-ins.
 - For modals, you'll likely need to put `role="document"` to wrap the text content like `<p>` etc. when the modal container has `role="dialog"`. This is because `role="dialog"` turns some screen readers to application mode (basically inherits `role="application"`), which ignores text that doesn't have `tabindex="0"` set, so you may need `role="document"` to turn those screen readers back to document mode.
