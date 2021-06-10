@@ -1,249 +1,472 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <style>
-      /* https://cdn.jsdelivr.net/gh/hchiam/css-boilerplate@5.1.0/style.css */
+<h1>Deque ARIA Patterns</h1>
 
-      a[target="_blank"] {
-        position: relative;
-        margin-right: 0.7rem;
-      }
+<h2>Example:</h2>
 
-      a[target="_blank"]::before {
-        /* no need for aria-description="(opens in new window)" */
-        content: " ↗️" / "";
-        content: " "
-          url('data:image/svg+xml;charset=utf8,<svg xmlns="http://www.w3.org/2000/svg" width="10px" height="10px" fill="white" style="background-color:white;"><path d="M4.5,1.0 L2.0,1.0 A1.0,1.0 0 0,0 1.0,2.0 L1.0,2.0 L1.0,8.0 A1.0,1.0 0,0,0 2.0,9.0 L8.0,9.0 A1.0,1.0 0,0,0 9.0,8.0 L9.0,5.5 M9.0,4.5 L9.0,1.0 L5.5,1.0 M9.0,1.0 L5.0,5.0" stroke-linejoin="round" stroke="black" fill="none" stroke-width="1.0"></path></svg>');
-        position: absolute;
-        right: -0.75rem;
-        top: -0.2em;
-      }
-
-      a[target="_blank"]::after {
-        content: "(opens in new window)";
-        /* hide so only seen by screen readers: */
-        width: 0;
-        height: 0;
-        opacity: 0;
-        position: absolute;
-      }
-    </style>
-    <link
-      rel="stylesheet"
-      href="https://dequeuniversity.com/assets/js/patterns/deque-patterns.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://dequeuniversity.com/assets/js/widgets/deque-widgets.css"
-    />
-  </head>
-  <body>
-    <h1>Deque ARIA Patterns</h1>
-
-    <h2>Example:</h2>
-
-    <div class="deque-alert-group">
-      <div id="deque-alert" class="deque-alert" role="alert" aria-live="polite">
-        <div id="showSuccess" class="deque-alert-success">
-          Congratulations! You clicked the button successfully.
-        </div>
-      </div>
-      <p>
-        <label for="useTimeoutInput"
-          >Automatically close the alert after 5 seconds</label
-        >
-        <input type="checkbox" id="useTimeoutInput" value="5000" />
-      </p>
-      <p>
-        <button
-          data-id="showSuccess"
-          class="deque-button"
-          data-reference-class="deque-alert-success"
-          data-html="Congratulations! You clicked the button successfully."
-        >
-          Show success alert
-        </button>
-        <button
-          data-id="showInfo"
-          class="deque-button"
-          data-reference-class="deque-alert-info"
-          data-html="Here is some information you should be aware of."
-        >
-          Show info alert
-        </button>
-        <button
-          data-id="showError"
-          class="deque-button"
-          data-reference-class="deque-alert-error"
-          data-html="Error: You did something wrong."
-        >
-          Show error alert
-        </button>
-        <button
-          data-id="clearAlerts"
-          class="deque-button deque-button-secondary"
-          data-reference-class="visuallyhidden"
-          data-html="Alert message cleared."
-        >
-          Clear alert
-        </button>
-      </p>
+<div class="deque-alert-group">
+  <div id="deque-alert" class="deque-alert" role="alert" aria-live="polite">
+    <div id="showSuccess" class="deque-alert-success">
+      Congratulations! You clicked the button successfully.
     </div>
+  </div>
+  <p>
+    <label for="useTimeoutInput">Automatically close the alert after 5 seconds</label>
+    <input type="checkbox" id="useTimeoutInput" value="5000" />
+  </p>
+  <p>
+    <button data-id="showSuccess" class="deque-button" data-reference-class="deque-alert-success" data-html="Congratulations! You clicked the button successfully.">
+      Show success alert
+    </button>
+    <button data-id="showInfo" class="deque-button" data-reference-class="deque-alert-info" data-html="Here is some information you should be aware of.">
+      Show info alert
+    </button>
+    <button data-id="showError" class="deque-button" data-reference-class="deque-alert-error" data-html="Error: You did something wrong.">
+      Show error alert
+    </button>
+    <button data-id="clearAlerts" class="deque-button deque-button-secondary" data-reference-class="visuallyhidden" data-html="Alert message cleared.">
+      Clear alert
+    </button>
+  </p>
+</div>
+
+<p>
+  The following buttons need custom code beyond the libraries:
+  <button class="deque-button" id="deque-button-primary-html">
+    Primary Button (HTML)
+  </button>
+
+  <span role="button" class="deque-button deque-button-aria" id="deque-button-primary-aria">Primary Button (ARIA)</span>
+  <button class="deque-button deque-button-secondary" id="deque-button-secondary-html" type="button">
+    Secondary Button (HTML)
+  </button>
+
+  <span role="button" class="deque-button deque-button-secondary deque-button-aria" id="deque-button-secondary-aria">Secondary Button (ARIA)</span>
+</p>
+
+<div class="deque-tabpanel" id="carousel">
+  <ul class="deque-tabpanel-tablist" role="tablist">
+    <li class="deque-tabpanel-tab" role="tab" id="tabCitySkyline" aria-controls="panelCitySkyline">
+      City Skyline
+    </li>
+    <li class="deque-tabpanel-tab" role="tab" id="tabSunset" aria-controls="panelSunset">
+      Beach Sunset
+    </li>
+    <li class="deque-tabpanel-tab" role="tab" id="tabRomanBuilding" aria-controls="panelRomanBuilding">
+      Roman Statue
+    </li>
+  </ul>
+  <div class="deque-tabpanel-tabpanels">
+    <div class="deque-tabpanel-tabpanel" role="tabpanel" id="panelCitySkyline" aria-labelledby="tabCitySkyline">
+      <img id="imgCitySkyline" src="assets/js/patterns/images/tempimage01.jpeg" alt="City skyline" />
+    </div>
+    <div class="deque-tabpanel-tabpanel" role="tabpanel" id="panelSunset" aria-labelledby="tabSunset">
+      <img id="imgSunset" src="assets/js/patterns/images/tempimage02.jpeg" alt="Sunset over lake" />
+    </div>
+    <div class="deque-tabpanel-tabpanel" role="tabpanel" id="panelRomanBuilding" aria-labelledby="tabRomanBuilding">
+      <img id="imgRomanBuilding" src="assets/js/patterns/images/tempimage03.jpeg" alt="Old roman building with statue on top." />
+    </div>
+  </div>
+
+  <div class="deque-tabpanel-button-bar">
+    <button class="deque-button" id="prevButton">prev</button>
+    <button class="deque-button" id="playButton">play</button>
+    <button class="deque-button" id="pauseButton">pause</button>
+    <button class="deque-button" id="nextButton">next</button>
+  </div>
+</div>
+
+<div class="custom-checkbox-widget" data-group-title="Choose the toppings for your ice cream" data-group-option-title="Select all toppings" data-delimiter="--" data-options="Oreos, Gems -- Gummy Bears --Strawberries"></div>
+
+<div>
+  <button id="deque-dialog-trigger" class="deque-dialog-trigger hideFromQuizHint deque-button" aria-controls="deque-dialog" data-id="first-deque-dialog">
+    Show Dialog!
+  </button>
+</div>
+<div id="deque-dialog" class="deque-dialog" data-id="first-deque-dialog">
+  <div class="deque-dialog-screen-wrapper"></div>
+  <div class="deque-dialog-screen">
+    <h1 id="dialogHeading" class="deque-dialog-heading">Simple Dialog</h1>
+    <p class="deque-dialog-description" id="dialogDescription">
+      Please enter your first and last name.
+    </p>
+    <form class="deque-dialog-content">
+      <label for="nameInput">First Name</label>
+      <input class="deque-input" id="nameInput" type="text" data-trap-enter="true" />
+      <label for="lastNameInput">Last Name</label>
+      <input class="deque-input" id="lastNameInput" type="text" data-trap-enter="true" />
+    </form>
+    <div class="deque-dialog-buttons">
+      <button class="deque-button deque-dialog-button-submit">Submit</button>
+      <button class="deque-button deque-dialog-button-cancel">Cancel</button>
+      <button class="deque-dialog-button-close" aria-label="Close dialog">
+        <span aria-hidden="true"></span>
+      </button>
+    </div>
+  </div>
+</div>
+
+<details class="deque-expander" id="dream">
+  <summary class="deque-expander-summary">
+    <span class="toggle-indicator"></span>
+    I Have a Dream (excerpt), by Dr. Martin Luther King
+  </summary>
+
+  <div class="deque-expander-content">
+    <p>
+      And so even though we face the difficulties of today and tomorrow, I still
+      have a dream. It is a dream deeply rooted in the American dream.
+    </p>
 
     <p>
-      <button class="deque-button" id="deque-button-primary-html">
-        Primary Button (HTML)
-      </button>
-
-      <span
-        role="button"
-        class="deque-button deque-button-aria"
-        id="deque-button-primary-aria"
-        >Primary Button (ARIA)</span
-      >
+      I have a dream that one day this nation will rise up and live out the true
+      meaning of its creed: "We hold these truths to be self-evident, that all
+      men are created equal.
     </p>
+
     <p>
-      <button
-        class="deque-button deque-button-secondary"
-        id="deque-button-secondary-html"
-        type="button"
-      >
-        Secondary Button (HTML)
-      </button>
-
-      <span
-        role="button"
-        class="deque-button deque-button-secondary deque-button-aria"
-        id="deque-button-secondary-aria"
-        >Secondary Button (ARIA)</span
-      >
+      I have a dream that one day on the red hills of Georgia, the sons of
+      former slaves and the sons of former slave owners will be able to sit down
+      together at the table of brotherhood.
     </p>
 
-    <h2>Links:</h2>
+    <p>
+      I have a dream that one day even the state of Mississippi, a state
+      sweltering with the heat of injustice, sweltering with the heat of
+      oppression, will be transformed into an oasis of freedom and justice.
+    </p>
 
-    <ul>
+    <p>
+      I have a dream that my four little children will one day live in a nation
+      where they will not be judged by the color of their skin but by the
+      content of their character.
+    </p>
+
+    <p>I have a dream today!</p>
+
+    <p>
+      I have a dream that one day, down in Alabama, with its vicious racists,
+      with its governor having his lips dripping with the words of
+      &quot;interposition&quot; and &quot;nullification&quot; &mdash; one day
+      right there in Alabama little black boys and black girls will be able to
+      join hands with little white boys and white girls as sisters and brothers.
+    </p>
+
+    <p>I have a dream today!</p>
+
+    <p>
+      I have a dream that one day every valley shall be exalted, and every hill
+      and mountain shall be made low, the rough places will be made plain, and
+      the crooked places will be made straight; and the glory of the Lord shall
+      be revealed and all flesh shall see it together.
+    </p>
+  </div>
+</details>
+
+<div class="deque-hierarchical-menu-group">
+  <div id="navigationRoot">
+    <ul class="deque-hierarchical-menu">
       <li>
-        CSS:
-        <a
-          href="https://dequeuniversity.com/assets/js/patterns/deque-patterns.min.css"
-          target="_blank"
-          >https://dequeuniversity.com/assets/js/patterns/deque-patterns.min.css</a
-        >
-        and
-        <a
-          href="https://dequeuniversity.com/assets/js/widgets/deque-widgets.css"
-          target="_blank"
-          >https://dequeuniversity.com/assets/js/widgets/deque-widgets.css</a
-        >
-      </li>
-      <li>
-        JS:
-        <a
-          href="https://dequeuniversity.com/assets/js/patterns/deque-patterns.min.js"
-          target="_blank"
-          >https://dequeuniversity.com/assets/js/patterns/deque-patterns.min.js</a
-        >
-      </li>
-      <li>
-        Fonts:
-        <a
-          href="https://dequeuniversity.com/assets/js/patterns/_fonts/MWFMDL2.1.63.ttf"
-          target="_blank"
-          >https://dequeuniversity.com/assets/js/patterns/_fonts/MWFMDL2.1.63.ttf</a
-        >
-        and
-        <a
-          href="https://dequeuniversity.com/assets/js/patterns/_fonts/MWFMDL2.1.63.woff"
-          target="_blank"
-          >https://dequeuniversity.com/assets/js/patterns/_fonts/MWFMDL2.1.63.woff</a
-        >
+        <button data-menu-id="navigationRoot" id="School Activities">
+          <span>School Activities</span>
+        </button>
+        <ul>
+          <li>
+            <button data-menu-id="navigationRoot" id="Performance" data-parent-id="School Activities">
+              <span>Performance</span>
+            </button>
+            <ul>
+              <li>
+                <a href="http://www.bing.com/search?q=band" data-menu-id="navigationRoot" data-parent-id="Performance" id="Band" class="external" target="_blank">
+                  "Band"
+                </a>
+              </li>
+              <li>
+                <a href="http://www.bing.com/search?q=choir" data-menu-id="navigationRoot" data-parent-id="Performance" id="Choir" class="external" target="_blank">
+                  "Choir"
+                </a>
+              </li>
+              <li>
+                <a href="http://www.bing.com/search?q=theater" data-menu-id="navigationRoot" data-parent-id="Performance" id="Theater" class="external" target="_blank">
+                  "Theater"
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <button data-menu-id="navigationRoot" id="Sports" data-parent-id="School Activities">
+              <span>Sports</span>
+            </button>
+            <ul>
+              <li>
+                <button data-menu-id="navigationRoot" id="Fall" data-parent-id="Sports">
+                  <span>Fall</span>
+                </button>
+                <ul>
+                  <li>
+                    <a href="http://www.bing.com/search?q=football" data-menu-id="navigationRoot" data-parent-id="Fall" id="Football" class="external" target="_blank">
+                      "Football"
+                    </a>
+                  </li>
+                  <li>
+                    <a href="http://www.bing.com/search?q=soccer" data-menu-id="navigationRoot" data-parent-id="Fall" id="Soccer" class="external" target="_blank">
+                      "Soccer"
+                    </a>
+                  </li>
+                  <li>
+                    <a href="http://www.bing.com/search?q=cross-country" data-menu-id="navigationRoot" data-parent-id="Fall" id="Cross Country" class="external" target="_blank">
+                      "Cross Country"
+                    </a>
+                  </li>
+                  <li>
+                    <a href="http://www.bing.com/search?q=cheerleading" data-menu-id="navigationRoot" data-parent-id="Fall" id="Cheerleading" class="external" target="_blank">
+                      "Cheerleading"
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <button data-menu-id="navigationRoot" id="Winter" data-parent-id="Sports">
+                  <span>Winter</span>
+                </button>
+                <ul>
+                  <li>
+                    <a href="http://www.bing.com/search?q=basketball" data-menu-id="navigationRoot" data-parent-id="Winter" id="Basketball" class="external" target="_blank">
+                      "Basketball"
+                    </a>
+                  </li>
+                  <li>
+                    <a href="http://www.bing.com/search?q=wrestling" data-menu-id="navigationRoot" data-parent-id="Winter" id="Wrestling" class="external" target="_blank">
+                      "Wrestling"
+                    </a>
+                  </li>
+                  <li>
+                    <a href="http://www.bing.com/search?q=cheerleading" data-menu-id="navigationRoot" data-parent-id="Winter" id="Cheerleading" class="external" target="_blank">
+                      "Cheerleading"
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <button data-menu-id="navigationRoot" id="Spring" data-parent-id="Sports">
+                  <span>Spring</span>
+                </button>
+                <ul>
+                  <li>
+                    <a href="http://www.bing.com/search?q=baseball" data-menu-id="navigationRoot" data-parent-id="Spring" id="Baseball" class="external" target="_blank">
+                      "Baseball"
+                    </a>
+                  </li>
+                  <li>
+                    <a href="http://www.bing.com/search?q=track" data-menu-id="navigationRoot" data-parent-id="Spring" id="Track" class="external" target="_blank">
+                      "Track"
+                    </a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
       </li>
     </ul>
+  </div>
+</div>
 
-    <h2>Patterns:</h2>
-    <ul>
-      <li>Alert</li>
-      <li>Current page: Button</li>
-      <li>Button (Toggle)</li>
-      <li>Carousel (based on a tabpanel)</li>
-      <li>Checkbox</li>
-      <li>Checkbox (Tri-State)</li>
-      <li>Dialog (Simple Dialog)</li>
-      <li>Dialog (Simple Alert Dialog)</li>
-      <li>Dialog (Message Dialog)</li>
-      <li>Dialog (Message Alert Dialog)</li>
-      <li>Expand/Collapse</li>
-      <li>Expand/Collapse (based on Details/Summary)</li>
-      <li>Link</li>
-      <li>Navigation (Hierarchical) with Expand/Collapse</li>
-      <li>Predictive Text</li>
-      <li>Progress Bar (Bounded)</li>
-      <li>Progress Bar (Unbounded)</li>
-      <li>Radio and Radio Group</li>
-      <li>Slider</li>
-      <li>Slider (Multirange)</li>
-      <li>Tabpanel</li>
-      <li>Table (Responsive, Collapsible)</li>
-      <li>Table (Sortable)</li>
-      <li>Tooltip</li>
-      <li>Tooltip Dialog</li>
-      <li>Tree View</li>
-    </ul>
+<p>
+  This bounded progress bar requires custom JS:
+<div id="progressbar-bounded" class="deque-progressbar deque-progressbar-bounded">
+  <progress role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-label="A bounded progress bar from 0 to 100">
+  </progress>
+  <p>
+    <button class="deque-button" id="start-progressbar">
+      Start
+    </button>
+    <button class="deque-button" id="reset-progressbar">
+      Reset
+    </button>
+  </p>
+</div>
+</p>
 
-    <h2>More info:</h2>
+<div class="deque-slider">
+  <p>How many bedrooms are you looking for?</p>
+  <div>
+    <input class="deque-slider-widget" type="range" min="1" max="4" value="1" step="1" aria-label="Bedroom Count" aria-valuetext="value: 1">
+  </div>
+  <label>value: <span></span></label>
+</div>
+<div class="deque-slider">
+  <p>What's your maximum price point?</p>
+  <div>
+    <input class="deque-slider-widget" type="range" min="50000" max="1500000" value="50000" step="50000" aria-orientation="vertical" aria-label="Maximum House Value" aria-valuetext="value: $550000">
+  </div>
+  <label>value: $<span></span></label>
+</div>
 
-    <p>
-      <a href="https://www.deque.com/blog/much-ado-about-aria" target="_blank"
-        >https://www.deque.com/blog/much-ado-about-aria</a
-      >
-    </p>
+<h2>Links:</h2>
 
-    <p>
-      <a href="https://codepen.io/hchiam/pen/gOmdBBo" target="_blank"
-        >https://codepen.io/hchiam/pen/gOmdBBo</a
-      >
-    </p>
+<ul>
+  <li>
+    CSS:
+    <a href="https://dequeuniversity.com/assets/js/patterns/deque-patterns.min.css" target="_blank">https://dequeuniversity.com/assets/js/patterns/deque-patterns.min.css</a>
+    and
+    <a href="https://dequeuniversity.com/assets/js/widgets/deque-widgets.css" target="_blank">https://dequeuniversity.com/assets/js/widgets/deque-widgets.css</a>
+  </li>
+  <li>
+    JS:
+    <a href="https://dequeuniversity.com/assets/js/patterns/deque-patterns.min.js" target="_blank">https://dequeuniversity.com/assets/js/patterns/deque-patterns.min.js</a>
+  </li>
+  <li>
+    Fonts:
+    <a href="https://dequeuniversity.com/assets/js/patterns/_fonts/MWFMDL2.1.63.ttf" target="_blank">https://dequeuniversity.com/assets/js/patterns/_fonts/MWFMDL2.1.63.ttf</a>
+    and
+    <a href="https://dequeuniversity.com/assets/js/patterns/_fonts/MWFMDL2.1.63.woff" target="_blank">https://dequeuniversity.com/assets/js/patterns/_fonts/MWFMDL2.1.63.woff</a>
+  </li>
+</ul>
 
-    <script src="https://dequeuniversity.com/assets/js/patterns/deque-patterns.min.js"></script>
-    <script>
-      // custom code for the buttons:
+<h2>Patterns:</h2>
+<ul>
+  <li>Alert</li>
+  <li>Current page: Button</li>
+  <li>Button (Toggle)</li>
+  <li>Carousel (based on a tabpanel)</li>
+  <li>Checkbox</li>
+  <li>Checkbox (Tri-State)</li>
+  <li>Dialog (Simple Dialog)</li>
+  <li>Dialog (Simple Alert Dialog)</li>
+  <li>Dialog (Message Dialog)</li>
+  <li>Dialog (Message Alert Dialog)</li>
+  <li>Expand/Collapse</li>
+  <li>Expand/Collapse (based on Details/Summary)</li>
+  <li>Link</li>
+  <li>Navigation (Hierarchical) with Expand/Collapse</li>
+  <li>Predictive Text</li>
+  <li>Progress Bar (Bounded)</li>
+  <li>Progress Bar (Unbounded)</li>
+  <li>Radio and Radio Group</li>
+  <li>Slider</li>
+  <li>Slider (Multirange)</li>
+  <li>Tabpanel</li>
+  <li>Table (Responsive, Collapsible)</li>
+  <li>Table (Sortable)</li>
+  <li>Tooltip</li>
+  <li>Tooltip Dialog</li>
+  <li>Tree View</li>
+</ul>
 
-      /* Specify which buttons */
-      var primaryHtml = document.getElementById("deque-button-primary-html");
-      var primaryAria = document.getElementById("deque-button-primary-aria");
-      var secondaryHtml = document.getElementById(
-        "deque-button-secondary-html"
-      );
-      var secondaryAria = document.getElementById(
-        "deque-button-secondary-aria"
-      );
+<h2>More info:</h2>
 
-      /* Define the functionality for the buttons */
-      function primaryHtmlHandler() {
-        alert("You clicked the primary HTML button");
+<p>
+  <a href="https://www.deque.com/blog/much-ado-about-aria" target="_blank">https://www.deque.com/blog/much-ado-about-aria</a>
+</p>
+
+<p>
+  <a href="https://codepen.io/hchiam/pen/gOmdBBo" target="_blank">https://codepen.io/hchiam/pen/gOmdBBo</a>
+</p>
+
+<style>
+  /* https://cdn.jsdelivr.net/gh/hchiam/css-boilerplate@5.1.0/style.css */
+  a[target="_blank"] {
+    position: relative;
+    margin-right: 0.7rem;
+  }
+
+  a[target="_blank"]::before {
+    /* no need for aria-description="(opens in new window)" */
+    content: " ↗️"/ "";
+    content: " "
+      url('data:image/svg+xml;charset=utf8,<svg xmlns="http://www.w3.org/2000/svg" width="10px" height="10px" fill="white" style="background-color:white;"><path d="M4.5,1.0 L2.0,1.0 A1.0,1.0 0 0,0 1.0,2.0 L1.0,2.0 L1.0,8.0 A1.0,1.0 0,0,0 2.0,9.0 L8.0,9.0 A1.0,1.0 0,0,0 9.0,8.0 L9.0,5.5 M9.0,4.5 L9.0,1.0 L5.5,1.0 M9.0,1.0 L5.0,5.0" stroke-linejoin="round" stroke="black" fill="none" stroke-width="1.0"></path></svg>');
+    position: absolute;
+    right: -0.75rem;
+    top: -0.2em;
+  }
+
+  a[target="_blank"]::after {
+    content: "(opens in new window)";
+    /* hide so only seen by screen readers: */
+    width: 0;
+    height: 0;
+    opacity: 0;
+    position: absolute;
+  }
+</style>
+<link rel="stylesheet" href="https://dequeuniversity.com/assets/js/patterns/deque-patterns.min.css" />
+<link rel="stylesheet" href="https://dequeuniversity.com/assets/js/widgets/deque-widgets.css" />
+<script src="https://dequeuniversity.com/assets/js/patterns/deque-patterns.min.js"></script>
+<script>
+  // custom code for the buttons:
+  /* Specify which buttons */
+  var primaryHtml = document.getElementById("deque-button-primary-html");
+  var primaryAria = document.getElementById("deque-button-primary-aria");
+  var secondaryHtml = document.getElementById("deque-button-secondary-html");
+  var secondaryAria = document.getElementById("deque-button-secondary-aria");
+  /* Define the functionality for the buttons */
+  function primaryHtmlHandler() {
+    alert("You clicked the primary HTML button");
+  }
+
+  function primaryAriaHandler() {
+    alert("You clicked the primary ARIA button");
+  }
+
+  function secondaryHtmlHandler() {
+    alert("You clicked the secondary HTML button");
+  }
+
+  function secondaryAriaHandler() {
+    alert("You clicked the secondary ARIA button");
+  }
+  /* Initialize buttons */
+  deque.button.initializeButton(primaryHtml, primaryHtmlHandler);
+  deque.button.initializeButton(primaryAria, primaryAriaHandler);
+  deque.button.initializeButton(secondaryHtml, secondaryHtmlHandler);
+  deque.button.initializeButton(secondaryAria, secondaryAriaHandler);
+</script>
+
+<script>
+  // bounded progress bar:
+  var host = document.getElementById('progressbar-bounded');
+  var progressBar = host.querySelector('progress');
+  progressBar.classList.add('deque-hidden');
+  var boundedProgressBar = deque.createProgressBar(progressBar, {
+    bounded: true
+  });
+  boundedProgressBar.id = 'boundedProgressBar';
+  var alertElement = document.createElement('span');
+  alertElement.id = 'progress-live';
+  alertElement.setAttribute('aria-live', 'polite');
+  alertElement.classList.add('deque-visuallyhidden');
+  document.body.appendChild(alertElement);
+  var value = 1;
+
+  function startProgress() {
+    return setInterval(function() {
+      if (value > 100) {
+        value = 100;
+        clearInterval(interval);
+        interval = null;
+        boundedProgressBar.setValue(value);
+        alert.innerHTML = boundedProgressBar.innerHTML;
+        alert.innerHTML = 'Loading Complete';
+        return boundedProgressBar.setAttribute('aria-busy', 'false');
       }
-
-      function primaryAriaHandler() {
-        alert("You clicked the primary ARIA button");
-      }
-
-      function secondaryHtmlHandler() {
-        alert("You clicked the secondary HTML button");
-      }
-
-      function secondaryAriaHandler() {
-        alert("You clicked the secondary ARIA button");
-      }
-
-      /* Initialize buttons */
-      deque.button.initializeButton(primaryHtml, primaryHtmlHandler);
-      deque.button.initializeButton(primaryAria, primaryAriaHandler);
-      deque.button.initializeButton(secondaryHtml, secondaryHtmlHandler);
-      deque.button.initializeButton(secondaryAria, secondaryAriaHandler);
-    </script>
-  </body>
-</html>
+      boundedProgressBar.setValue(value);
+      alert.innerHTML = boundedProgressBar.innerHTML;
+      boundedProgressBar.setAttribute('aria-busy', 'true');
+      value += 10;
+    }, 1000);
+  }
+  var interval;
+  var startButton = host.querySelector('#start-progressbar');
+  startButton.addEventListener('click', function() {
+    boundedProgressBar.classList.add('deque-progressbar');
+    boundedProgressBar.classList.remove('deque-hidden');
+    boundedProgressBar.setAttribute('aria-busy', 'true');
+    interval = startProgress();
+  });
+  var resetButton = host.querySelector('#reset-progressbar');
+  resetButton.addEventListener('click', function() {
+    value = 1;
+    if (!interval) {
+      interval = startProgress();
+    }
+  });
+</script>
