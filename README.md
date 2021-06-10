@@ -149,5 +149,6 @@ Consider: <https://ableplayer.github.io/ableplayer/>
 - Example: <https://dequeuniversity.com/assets/html/module-forms/progressive/good/index.html>
 - Custom form element: make sure it has a Name, Role, and Attribute (i.e. Label, Role, and State.). Anything that can't be communicated via those things should go into an `aria-live` region.
 - Confirm before submitting (and enable fixing).
-- Confirm after submitting (set focus _after_ page load to avoid issues with parsing timing). Consider `<title>` = first thing user hears on new page.
+- Confirm after submitting (set focus _after_ page load to avoid issues with parsing timing).
+- Consider indicating form success/error in `<title>` = first thing user hears on new page.
 - Consider `aria-live` with 2-second debounce for password strength. (On blur won't work because the new focus will likely get announced instead.)
