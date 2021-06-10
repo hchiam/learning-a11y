@@ -57,6 +57,7 @@ My summary:
 - [accessible form (group label)](https://codepen.io/hchiam/pen/GRWXjZK)
 - [MathJax example](https://codepen.io/hchiam/pen/WNpgzMe)
 - [Support Both Legacy JS and Modern JS Without Slowing All Browsers](https://codepen.io/hchiam/pen/mdWGLNE)
+- [Deque ARIA patterns CSS+JS](https://codepen.io/hchiam/pen/ExWedQx)
 
 ## Caption file formats
 
@@ -268,3 +269,43 @@ Consider: <https://ableplayer.github.io/ableplayer/>
 - You can use `role="math"` and `aria-label=""` on a `<div>` that wraps MathML markup with a `<math>` element, but MathML isn't universally supported. Or just use MathJax, which also happens to be able to help with MathML markup support for all browsers.
   - [MathJax example](https://codepen.io/hchiam/pen/WNpgzMe)
 - `aria-busy="true"` if you want to suppress suppress `aria-live` region announcements (e.g. page load).
+
+## Deque ARIA patterns
+
+1. Alert
+2. Current page: Button
+3. Button (Toggle)
+4. Carousel (based on a tabpanel)
+5. Checkbox
+6. Checkbox (Tri-State)
+7. Dialog (Simple Dialog)
+8. Dialog (Simple Alert Dialog)
+9. Dialog (Message Dialog)
+10. Dialog (Message Alert Dialog)
+11. Expand/Collapse
+12. Expand/Collapse (based on Details/Summary)
+13. Link
+14. Navigation (Hierarchical) with Expand/Collapse
+15. Predictive Text
+16. Progress Bar (Bounded)
+17. Progress Bar (Unbounded)
+18. Radio and Radio Group
+19. Slider
+20. Slider (Multirange)
+21. Tabpanel
+22. Table (Responsive, Collapsible)
+23. Table (Sortable)
+24. Tooltip
+25. Tooltip Dialog
+26. Tree View
+
+### Links
+
+- CSS: `<link rel="stylesheet" href="https://dequeuniversity.com/assets/js/patterns/deque-patterns.min.css">`
+- JS: `<script src="https://dequeuniversity.com/assets/js/patterns/deque-patterns.min.js"></script>`
+- Fonts: <https://dequeuniversity.com/assets/js/patterns/_fonts/MWFMDL2.1.63.ttf> and <https://dequeuniversity.com/assets/js/patterns/_fonts/MWFMDL2.1.63.woff>
+
+### Examples
+
+- <https://codepen.io/hchiam/pen/gOmdBBo>
+- <https://codepen.io/hchiam/pen/ExWedQx>

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* https://cdn.jsdelivr.net/gh/hchiam/css-boilerplate@5.1.0/style.css */
+
+      a[target="_blank"] {
+        position: relative;
+        margin-right: 0.7rem;
+      }
+
+      a[target="_blank"]::before {
+        /* no need for aria-description="(opens in new window)" */
+        content: " ↗️" / "";
+        content: " "
+          url('data:image/svg+xml;charset=utf8,<svg xmlns="http://www.w3.org/2000/svg" width="10px" height="10px" fill="white" style="background-color:white;"><path d="M4.5,1.0 L2.0,1.0 A1.0,1.0 0 0,0 1.0,2.0 L1.0,2.0 L1.0,8.0 A1.0,1.0 0,0,0 2.0,9.0 L8.0,9.0 A1.0,1.0 0,0,0 9.0,8.0 L9.0,5.5 M9.0,4.5 L9.0,1.0 L5.5,1.0 M9.0,1.0 L5.0,5.0" stroke-linejoin="round" stroke="black" fill="none" stroke-width="1.0"></path></svg>');
+        position: absolute;
+        right: -0.75rem;
+        top: -0.2em;
+      }
+
+      a[target="_blank"]::after {
+        content: "(opens in new window)";
+        /* hide so only seen by screen readers: */
+        width: 0;
+        height: 0;
+        opacity: 0;
+        position: absolute;
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://dequeuniversity.com/assets/js/patterns/deque-patterns.min.css"
+    />
+  </head>
+  <body>
+    <h1>Deque ARIA Patterns</h1>
+
+    <h2>Example:</h2>
+
+    <p>(Might Need to fix the CORS requestst for font files.)</p>
+
+    <div class="deque-alert-group">
+      <div id="deque-alert" class="deque-alert" role="alert">
+        <div id="showSuccess" class="deque-alert-success">
+          Congratulations! You clicked the button successfully.
+        </div>
+        <div id="showInfo" class="deque-alert-info">
+          Here is some information you should be aware of.
+        </div>
+        <div id="showError" class="deque-alert-error">
+          Error: You did something wrong.
+        </div>
+        <div id="clearAlerts" class="visuallyhidden">
+          Alert message cleared.
+        </div>
+      </div>
+      <p>
+        <label for="useTimeoutInput"
+          >Automatically close the alert after 5 seconds</label
+        >
+        <input type="checkbox" id="useTimeoutInput" value="5000" />
+      </p>
+      <p>
+        <button id="showSuccess" class="deque-button">
+          Show success alert
+        </button>
+        <button id="showInfo" class="deque-button">Show info alert</button>
+        <button id="showError" class="deque-button">Show error alert</button>
+        <button id="clearAlerts" class="deque-button deque-button-secondary">
+          Clear alert
+        </button>
+      </p>
+    </div>
+
+    <h2>Links:</h2>
+
+    <ul>
+      <li>
+        CSS:
+        <a
+          href="https://dequeuniversity.com/assets/js/patterns/deque-patterns.min.css"
+          target="_blank"
+          >https://dequeuniversity.com/assets/js/patterns/deque-patterns.min.css</a
+        >
+      </li>
+      <li>
+        JS:
+        <a
+          href="https://dequeuniversity.com/assets/js/patterns/deque-patterns.min.js"
+          target="_blank"
+          >https://dequeuniversity.com/assets/js/patterns/deque-patterns.min.js</a
+        >
+      </li>
+      <li>
+        Fonts:
+        <a
+          href="https://dequeuniversity.com/assets/js/patterns/_fonts/MWFMDL2.1.63.ttf"
+          target="_blank"
+          >https://dequeuniversity.com/assets/js/patterns/_fonts/MWFMDL2.1.63.ttf</a
+        >
+        and
+        <a
+          href="https://dequeuniversity.com/assets/js/patterns/_fonts/MWFMDL2.1.63.woff"
+          target="_blank"
+          >https://dequeuniversity.com/assets/js/patterns/_fonts/MWFMDL2.1.63.woff</a
+        >
+      </li>
+    </ul>
+
+    <h2>Patterns:</h2>
+    <ul>
+      <li>Alert</li>
+      <li>Current page: Button</li>
+      <li>Button (Toggle)</li>
+      <li>Carousel (based on a tabpanel)</li>
+      <li>Checkbox</li>
+      <li>Checkbox (Tri-State)</li>
+      <li>Dialog (Simple Dialog)</li>
+      <li>Dialog (Simple Alert Dialog)</li>
+      <li>Dialog (Message Dialog)</li>
+      <li>Dialog (Message Alert Dialog)</li>
+      <li>Expand/Collapse</li>
+      <li>Expand/Collapse (based on Details/Summary)</li>
+      <li>Link</li>
+      <li>Navigation (Hierarchical) with Expand/Collapse</li>
+      <li>Predictive Text</li>
+      <li>Progress Bar (Bounded)</li>
+      <li>Progress Bar (Unbounded)</li>
+      <li>Radio and Radio Group</li>
+      <li>Slider</li>
+      <li>Slider (Multirange)</li>
+      <li>Tabpanel</li>
+      <li>Table (Responsive, Collapsible)</li>
+      <li>Table (Sortable)</li>
+      <li>Tooltip</li>
+      <li>Tooltip Dialog</li>
+      <li>Tree View</li>
+    </ul>
+
+    <h2>More info:</h2>
+
+    <p>
+      <a href="https://www.deque.com/blog/much-ado-about-aria" target="_blank"
+        >https://www.deque.com/blog/much-ado-about-aria</a
+      >
+    </p>
+
+    <p>
+      <a href="https://codepen.io/hchiam/pen/gOmdBBo" target="_blank"
+        >https://codepen.io/hchiam/pen/gOmdBBo</a
+      >
+    </p>
+    <script src="https://dequeuniversity.com/assets/js/patterns/deque-patterns.min.js"></script>
+  </body>
+</html>
