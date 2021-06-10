@@ -36,27 +36,20 @@
       rel="stylesheet"
       href="https://dequeuniversity.com/assets/js/patterns/deque-patterns.min.css"
     />
+    <link
+      rel="stylesheet"
+      href="https://dequeuniversity.com/assets/js/widgets/deque-widgets.css"
+    />
   </head>
   <body>
     <h1>Deque ARIA Patterns</h1>
 
     <h2>Example:</h2>
 
-    <p>(Might Need to fix the CORS requestst for font files.)</p>
-
     <div class="deque-alert-group">
-      <div id="deque-alert" class="deque-alert" role="alert">
+      <div id="deque-alert" class="deque-alert" role="alert" aria-live="polite">
         <div id="showSuccess" class="deque-alert-success">
           Congratulations! You clicked the button successfully.
-        </div>
-        <div id="showInfo" class="deque-alert-info">
-          Here is some information you should be aware of.
-        </div>
-        <div id="showError" class="deque-alert-error">
-          Error: You did something wrong.
-        </div>
-        <div id="clearAlerts" class="visuallyhidden">
-          Alert message cleared.
         </div>
       </div>
       <p>
@@ -66,12 +59,36 @@
         <input type="checkbox" id="useTimeoutInput" value="5000" />
       </p>
       <p>
-        <button id="showSuccess" class="deque-button">
+        <button
+          data-id="showSuccess"
+          class="deque-button"
+          data-reference-class="deque-alert-success"
+          data-html="Congratulations! You clicked the button successfully."
+        >
           Show success alert
         </button>
-        <button id="showInfo" class="deque-button">Show info alert</button>
-        <button id="showError" class="deque-button">Show error alert</button>
-        <button id="clearAlerts" class="deque-button deque-button-secondary">
+        <button
+          data-id="showInfo"
+          class="deque-button"
+          data-reference-class="deque-alert-info"
+          data-html="Here is some information you should be aware of."
+        >
+          Show info alert
+        </button>
+        <button
+          data-id="showError"
+          class="deque-button"
+          data-reference-class="deque-alert-error"
+          data-html="Error: You did something wrong."
+        >
+          Show error alert
+        </button>
+        <button
+          data-id="clearAlerts"
+          class="deque-button deque-button-secondary"
+          data-reference-class="visuallyhidden"
+          data-html="Alert message cleared."
+        >
           Clear alert
         </button>
       </p>
@@ -86,6 +103,12 @@
           href="https://dequeuniversity.com/assets/js/patterns/deque-patterns.min.css"
           target="_blank"
           >https://dequeuniversity.com/assets/js/patterns/deque-patterns.min.css</a
+        >
+        and
+        <a
+          href="https://dequeuniversity.com/assets/js/widgets/deque-widgets.css"
+          target="_blank"
+          >https://dequeuniversity.com/assets/js/widgets/deque-widgets.css</a
         >
       </li>
       <li>
