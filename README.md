@@ -324,4 +324,13 @@ Consider: <https://ableplayer.github.io/ableplayer/>
 - <https://codepen.io/hchiam/pen/gOmdBBo>
 - <https://codepen.io/hchiam/pen/ExWedQx>
 
+## Mnemonic for Accessibility Tree element properties
+
+- Name: `aria-label="Howard"`
+- Description: `aria-label="likes learning"`
+- Role: `role="software developer"`
+- Property: `type="person"`
+- Relationship: `aria-owns="this GitHub account"`
+- State: `aria-selected="true"`
+
 </details>
