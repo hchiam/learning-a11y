@@ -376,7 +376,7 @@ Test yourself:
 - web accessibility initiative - accessible rich internet applications (HTML attributes spec to add semantics)
 - authoring tool accessibility guidelines
 - [website accessibility conformance evaluation methodology](https://www.w3.org/WAI/test-evaluate/conformance/wcag-em/)
-- lowest, mid range, highest
+- lowest, mid range, highest (usually go with AA)
 - americans with disabilities act (civil, US)
 - government procurement rules (US)
 - recent update to WCAG
