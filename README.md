@@ -334,6 +334,19 @@ Consider: <https://ableplayer.github.io/ableplayer/>
 - Relationship: `aria-owns="this GitHub account"`
 - State: `aria-selected="true"`
 
+## WCAG-EM notes
+
+- WCAG-EM = [website accessibility conformance evaluation methodology](https://www.w3.org/WAI/test-evaluate/conformance/wcag-em/)
+- [WCAG-EM procedure](https://www.w3.org/TR/WCAG-EM/#procedure)
+- [WCAG-EM report generator](https://www.w3.org/WAI/eval/report-tool)
+  - Very helpful form! Reminders of all the steps! Auto-adjusts field prompts depending on selected A/AA/AAA level!
+  - Steps:
+    1. Scope
+    2. Explore
+    3. Sample
+    4. Audit sample
+    5. Report
+
 ## Various terms to know
 
 Test yourself:
@@ -375,9 +388,7 @@ Test yourself:
 - web content accessibility guidelines (practical)
 - web accessibility initiative - accessible rich internet applications (HTML attributes spec to add semantics)
 - authoring tool accessibility guidelines
-- [website accessibility conformance evaluation methodology](https://www.w3.org/WAI/test-evaluate/conformance/wcag-em/)
-  - [WCAG-EM procedure](https://www.w3.org/TR/WCAG-EM/#procedure)
-  - [WCAG-EM report generator](https://www.w3.org/WAI/eval/report-tool)
+- website accessibility conformance evaluation methodology
 - lowest, mid range, highest (usually go with AA)
 - americans with disabilities act (civil, US)
 - government procurement rules (US)
