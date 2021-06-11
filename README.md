@@ -63,6 +63,27 @@ My summary:
 <details>
 <summary>More notes (click to expand)</summary>
 
+## Random note
+
+Creating instances of elements in JS instead of hidden in HTML will work for getting HTML5 elements to work in IE <= 8 (need instance created first for some reason).
+
+Literally paste the following [Internet Explorer conditional comment](https://stackoverflow.com/a/41430464):
+
+```html
+<!--[if lt IE 9]>
+  <script>
+    var e = (
+      "abbr,article,aside,audio,bdi,canvas,datalist,details,dialog," +
+      "figcaption,figure,footer,header,keygen,mark,menu,meter,main,nav,output," +
+      "progress,rp,ruby,rt,section,source,summary,time,track,video,wbr"
+    ).split(",");
+    for (var i = 0; i < e.length; i++) {
+      document.createElement(e[i]);
+    }
+  </script>
+<![endif]-->
+```
+
 ## Caption file formats
 
 ### Basic
