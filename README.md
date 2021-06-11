@@ -331,7 +331,7 @@ Consider: <https://ableplayer.github.io/ableplayer/>
 - Name: `aria-label="Howard"`
 - Description: `aria-label="likes learning"`
 - Role: `role="software developer"`
-- Property: `type="person"`
+- Property: `start="9" end="5"` (and value)
 - Relationship: `aria-owns="this GitHub account"`
 - State: `aria-selected="true"`
 
