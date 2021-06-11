@@ -15,6 +15,7 @@ Deque prep course for IAAP WAS: <https://dequeuniversity.com/curriculum/packages
 1. Use [WAVE](https://chrome.google.com/webstore/detail/wave-evaluation-tool/jbbplnpkjmmeebjpijfedlgcdilocofh) or some other automated a11y checker, like [axe DevTools for Firefox](https://addons.mozilla.org/en-US/firefox/addon/axe-devtools) or lighthouse or [axe DevTools for Chrome](https://chrome.google.com/webstore/detail/axe-devtools-web-accessib/lhdoppojpmngadmnindnejefpokejbdd).
 2. Use a [screen reader](https://www.youtube.com/watch?v=5R-6WvAihms&list=PLNYkxOF6rcICWx0C9LVWWVqvHlYJyqw7g&index=7). Test as realistically as possible.
 3. Tab. Shift+Tab. Enter. (And screen reader + arrow keys.)
+4. [WCAG-EM](https://www.w3.org/WAI/eval/report-tool)
 
 ## P.O.U.R.
 
