@@ -334,4 +334,33 @@ Consider: <https://ableplayer.github.io/ableplayer/>
 - Relationship: `aria-owns="this GitHub account"`
 - State: `aria-selected="true"`
 
+## Various terms to know
+
+Test yourself:
+
+- a11y
+- UX
+- POUR
+- W3C
+- WCAG
+- WAI-ARIA
+- ATAG
+- A, AA, AAA
+- ADA
+- Section 508
+- WCAG 2.1
+- CVAA
+- AODA
+- EN 301 549
+- IAAP
+- WAS
+- CPACC
+- AT
+- JAWS
+- NVDA
+- WAVE
+- WebAIM
+- Deque
+- BOK
+
 </details>
