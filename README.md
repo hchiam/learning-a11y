@@ -346,7 +346,7 @@ Consider: <https://ableplayer.github.io/ableplayer/>
     2. Explore (automated test to cover 30%, then screen reader + browser + device combos)
     3. Sample
     4. Audit sample
-    5. Report (say what bug, where, what breaks for who, how bad, how repro, visual, how might fix)
+    5. Report (say what bug, where, what breaks for who, how impactful, how repro, visual, how might fix)
 
 ## Various terms to know
 
