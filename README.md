@@ -342,7 +342,7 @@ Consider: <https://ableplayer.github.io/ableplayer/>
 - [WCAG-EM report generator](https://www.w3.org/WAI/eval/report-tool)
   - Very helpful form! Reminders of all the steps! Auto-adjusts field prompts depending on selected A/AA/AAA level!
   - Steps:
-    1. Scope
+    1. Scope (prioritize, images, forms, tables, widgets, consider to-be-commonly-used templates)
     2. Explore
     3. Sample
     4. Audit sample
