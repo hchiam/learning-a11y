@@ -364,4 +364,35 @@ Test yourself:
 - BOK
 - SC
 
+<details>
+<summary>Answers</summary>
+
+- accessibility
+- user experience
+- perceivable, operable, understandable, robust (can you explain each in simple words, and give an example?)
+- world wide web consortium (standards org)
+- web content accessibility guidelines (practical)
+- web accessibility initiative - accessible rich internet applications (HTML attributes spec to add semantics)
+- authoring tool accessibility guidelines
+- lowest, mid range, highest
+- americans with disabilities act (civil, US)
+- government procurement rules (US)
+- recent update to WCAG
+- 21st century communications and video accessibility act (US, communications must be accessible, like TV for example)
+- accessibility for ontarians with disabilities act (civil, like ADA)
+- EN 301 549 is government procurement rules (Europe) (like Section 508)
+- international association of accessibility professionals
+- web accessibility specialist
+- certified professional in accessibility core competencies
+- accessibility tree
+- job access with speech
+- nonvisual desktop access
+- web accessibility evaluation tool
+- web accessibility in mind
+- deque = Deque Systems
+- body of knowledge
+- success criteria
+
+</details>
+
 </details>
