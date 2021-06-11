@@ -343,10 +343,10 @@ Consider: <https://ableplayer.github.io/ableplayer/>
   - Very helpful form! Reminders of all the steps! Auto-adjusts field prompts depending on selected A/AA/AAA level!
   - Steps:
     1. Scope (prioritize, images, forms, tables, widgets, consider to-be-commonly-used templates)
-    2. Explore
+    2. Explore (automated test to cover 30%, then screen reader + browser + device combos)
     3. Sample
     4. Audit sample
-    5. Report
+    5. Report (say what bug, where, what breaks for who, how bad, how repro, visual, how might fix)
 
 ## Various terms to know
 
