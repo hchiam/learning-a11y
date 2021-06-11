@@ -377,6 +377,7 @@ Test yourself:
 - authoring tool accessibility guidelines
 - [website accessibility conformance evaluation methodology](https://www.w3.org/WAI/test-evaluate/conformance/wcag-em/)
   - [WCAG-EM procedure](https://www.w3.org/TR/WCAG-EM/#procedure)
+  - [WCAG-EM report generator](https://www.w3.org/WAI/eval/report-tool)
 - lowest, mid range, highest (usually go with AA)
 - americans with disabilities act (civil, US)
 - government procurement rules (US)
