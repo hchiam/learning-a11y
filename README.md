@@ -345,6 +345,7 @@ Test yourself:
 - WCAG
 - WAI-ARIA
 - ATAG
+- WCAG-EM
 - A, AA, AAA
 - ADA
 - Section 508
@@ -374,6 +375,7 @@ Test yourself:
 - web content accessibility guidelines (practical)
 - web accessibility initiative - accessible rich internet applications (HTML attributes spec to add semantics)
 - authoring tool accessibility guidelines
+- [website accessibility conformance evaluation methodology](https://www.w3.org/WAI/test-evaluate/conformance/wcag-em/)
 - lowest, mid range, highest
 - americans with disabilities act (civil, US)
 - government procurement rules (US)
