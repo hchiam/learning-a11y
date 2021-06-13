@@ -17,14 +17,14 @@ Deque prep course for IAAP WAS: <https://dequeuniversity.com/curriculum/packages
 3. Tab. Shift+Tab. Enter. (And screen reader + arrow keys.)
 4. Checklist/report generator: [WCAG-EM](https://www.w3.org/WAI/eval/report-tool)
 
-## P.O.U.R.
+## [P.O.U.R.](https://www.w3.org/WAI/WCAG21/Understanding/intro#understanding-the-four-principles-of-accessibility)
 
 My summary:
 
-- P = Perceivable = can see/hear/feel (like captions)
-- O = Operable = can use (like element focusability + keyboard + time + recovery)
-- U = Understandable = can get meaning (like labels + layout familiarity + meaningful error messages)
-- R = Robust = is flexible/cross-compatible (like mobile versus desktop)
+- P = Perceivable = can see/hear/feel (like captions).
+- O = Operable = can use (like element focusability + keyboard + time + recovery).
+- U = Understandable = can get meaning (like labels + layout familiarity + meaningful error messages), basically need P and O first before U.
+- R = Robust = is flexible/cross-compatible (like mobile versus desktop).
 
 ## Some a11y-related GitHub repos
 
@@ -45,7 +45,7 @@ My summary:
 - [`aria-labelledby` "loop" (not really)](https://codepen.io/hchiam/pen/VwpBPvx)
 - [definition/description list](https://codepen.io/hchiam/pen/zYZLNzd)
 - [iframe for scoping JS and CSS?](https://codepen.io/hchiam/pen/ExWpZbb)
-- Accessible link that opens in new window: (note that using an HTML-only solution instead of CSS `::before`/`::after` `content` basically guarantees compatibility across browser/screen reader combos)
+- Accessible link that opens in new window: (note that using an HTML-only solution instead of CSS `::before`/`::after` `content` basically guarantees compatibility across browser/screen reader combos especially [CSS `content` for IE](https://jhalabi.com/blog/before-after-accessibility))
   - [version 1 of Accessible link that opens in new window](https://codepen.io/hchiam/pen/dyvedQj)
   - [version 2 of Accessible link that opens in new window](https://codepen.io/hchiam/pen/NWpBdmr)
   - [version 3 of Accessible link that opens in new window](https://codepen.io/hchiam/pen/ExWpXEo)
@@ -157,22 +157,22 @@ Consider: <https://ableplayer.github.io/ableplayer/>
 ## Notes on focus
 
 - System-wide keyboard accessibility: Mac has a setting that lets you tab to all controls, not just inputs.
-- Move focus to new content triggered by user (example: modal), otherwise it's disorienting (example: screen reader users tend to explore forms before filling them out, triggering blur).
+- Move focus to new content only if triggered by user (example: modal), otherwise it's disorienting (example: screen reader users tend to explore forms before filling them out, triggering blur).
 - Move focus to next logical element if element removed (example: closing modal). This means you need to maintain the previously-focused element in memory somehow. (Otherwise focus returns to top of page - really bad.) Also make sure the re-focused element announces something so the user knows what they teleported to.
 - Widget usage instructions with a popup tooltip + aria-label are nice to have when focusing on a custom widget or when users aren't familiar with the standard ARIA keyboard interaction patterns for a widget.
 - Make infinite scrolling the last element on the page, or let users "escape", or let users decide to load more.
-- You can use `tabindex="-1"` on text to let JS focus it without confusing users when they could focus it with Tab.
+- You can use `tabindex="-1"` on text to let JS focus it, otherwise `tabindex="0"` might confuse users when they happen to focus it with Tab (when they expect the usual focusable elements).
 
 ## Notes on touch input
 
-- Make sure gestures can also be done with taps (for people with mobility issues).
+- Make sure gestures can also be alternatively done with taps (for people with mobility/dexterity issues having difficulty performing touch gestures).
 - A click event is accessible to mouse **_and_** touch **_and_** keyboard! (As opposed to `onmouseup` or `ontouchend` or `onkeyup`.)
 
 ## Notes on forms
 
 - `aria-describedby` won't work on `<fieldset>` or `<legend>`, so avoid having _non-label/non-focusable_ text in the middle of a form (users likely will tab and miss the text), and instead put the text before the form, or associate the text with one or more of the inputs with `aria-describedby` on them.
 - Make sure instructions and labels are _next to_ their related inputs (both visual and cognitive effects). Otherwise they can be hidden/shown with a button, _instead of_ making the text small.
-- Tell screen reader users of required fields with `aria-required="true"` (or `<... required>` which adds browser behaviour, but does so inconsistently, and may conflict with your custom form validation behaviours). Either way, also include visual indicators for sighted users.
+- Tell screen reader users of required fields with `aria-required="true"`. The alternative is the `<... required>` attribute, which adds browser behaviour, but does so inconsistently, and may conflict with your custom form validation behaviours. Either way, also include visual indicators for sighted users.
 - `aria-invalid="true"` and `aria-describedby="error_description"` on the inputs
 - `<a href="#email">Go to the first field with an error to fix it.</a>`
 - `autocomplete="current-password"` - see <https://www.w3.org/TR/WCAG21/#input-purposes>
@@ -181,7 +181,7 @@ Consider: <https://ableplayer.github.io/ableplayer/>
 - Confirm before submitting (and enable fixing).
 - Confirm after submitting (set focus _after_ page load to avoid issues with parsing timing).
 - Consider indicating form success/error in `<title>` = first thing user hears on new page.
-- Consider `aria-live` with 2-second debounce for password strength. (On blur won't work because the new focus will likely get announced instead.)
+- Consider `aria-live` with 2-second debounce for "password strength messages". (On blur won't work because the new focus will likely get announced instead.)
 - Tab, Shift + Tab, Enter/Spacebar, arrow keys, (for `<select>`:) Alt/Option + Down arrow and then arrow keys and then Enter
 
 ## Notes on screen readers
@@ -206,7 +206,7 @@ Consider: <https://ableplayer.github.io/ableplayer/>
 - VoiceOver works best with Safari.
 - [ChromeVox](https://support.google.com/chromebook/answer/7031755) works on Chrome and ChromeOS/Chromebooks.
 - Consider telling users that content is still loading with things like `alt="Content loading"` (but don't go overboard with `aria-live` unless it's a really slow process).
-- Using `visibility: hidden;`, `display: none;`, or attribute `hidden` will hide the element visually but also hides it from screen readers, so you'll need to resort to clipping or positioning or `aria-label`. See my notes on [hiding elements visually and/or in the Accessibility Tree](https://github.com/hchiam/web-accessibility-course-notes#hidingshowing-only-for-accessibility-tree-at).
+- Using `visibility: hidden;`, `display: none;`, or attribute `hidden` will hide the element visually but also hides it from screen readers, so you'll need to resort to clipping or positioning or `aria-label` to expose it to screen readers only. See my notes on [hiding elements visually and/or in the Accessibility Tree](https://github.com/hchiam/web-accessibility-course-notes#hidingshowing-only-for-accessibility-tree-at).
 
 ## Notes on new content or SPAs (Single-Page Apps)
 
@@ -215,13 +215,17 @@ Consider: <https://ableplayer.github.io/ableplayer/>
 
   ```js
   event.preventDefault();
-  emptyContainerForTemporaryFocus.focus();
+
+  hiddenEmptyContainerForTemporaryFocus.focus(); // <--- to enable announcing the later-focused element in case it happens to be the same element but updated
+
   oldContent.empty();
   populateNewContent();
-  updateBrowserHistory(newUrl, newTitle);
+
+  updateBrowserHistory(newUrl, newTitle); // <--- for SPAs
+
   var delayForIOS = 1000;
   setTimeout(() => {
-    newHeading.focus();
+    newHeading.focus(); // <--- to orient the teleported user
   }, delayForIOS);
   ```
 
@@ -260,7 +264,7 @@ Consider: <https://ableplayer.github.io/ableplayer/>
 
 ### Basically
 
-1. `aria-labelledby`
+1. `aria-labelledby` (Note: this is **_NOT_** `aria-labelledby`.)
 2. `aria-label`
 3. text <-- (but for implementation, go for this option first)
 4. (`title` but only kinda works for some users)
@@ -269,10 +273,10 @@ Consider: <https://ableplayer.github.io/ableplayer/>
 
 - Note that description !== label.
 - Label = replaces the element's original text.
-- Description = read after label as extra info (with a pause).
-- `aria-labelledby="can have multiple IDs for labels"`
+- Description = (with a pause) announced after the computed label, as extra info.
+- `aria-labelledby="can have multiple IDs as labels"`
 - Keep in mind that `aria-label` is not consistently supported for some non-focusable elements, screen reader versions/modes, or browser versions.
-- Use `aria-label` on the common search box, since it's usually focused before the button, otherwise it's not immediately obvious what the `input` is for:
+- Use `aria-label` on the search box, since it's usually focused before the button, otherwise it's not immediately obvious what the `input` is for:
 
   ```js
   <form action="#" role="search">
@@ -288,7 +292,7 @@ Consider: <https://ableplayer.github.io/ableplayer/>
   - On bottom: ARIA attributes. Example: `aria-checked="true"`. (Link: [descriptions of ARIA attributes](https://www.w3.org/TR/wai-aria/#global_states))
   - (Note: some roles are "abstract" and can't actually be used in the code.)
 - Only use ARIA roles+attributes if you need to. Better to use native built-ins.
-- For modals, you'll likely need to put `role="document"` to wrap the text content like `<p>` etc. when the modal container has `role="dialog"`. This is because `role="dialog"` turns some screen readers to application mode (basically inherits `role="application"`), which ignores text that doesn't have `tabindex="0"` set, so you may need `role="document"` to turn those screen readers back to document mode.
+- For modals, you'll likely need to put `role="document"` to wrap the text content like `<p>` etc. when the modal container has `role="dialog"`. This is because `role="dialog"` turns some screen readers to application mode (basically inherits `role="application"`), which ignores text that doesn't have `tabindex="0"` set, so you may need `role="document"` to turn those screen readers back to document mode. `<div role="dialog"><div role="document">`.
 - `role="application"` gives developers more freedom but also more responsibility. It turns off most page navigation features, which lets you define custom keyboard logic, but now you might need to re-implement a bunch of things.
 
   - Notably, application mode does not turn off the normal behaviour of: Tab for focus, Enter/Return, space bar, or arrow keys (on selects or radios).
@@ -303,7 +307,7 @@ Consider: <https://ableplayer.github.io/ableplayer/>
 
   - `role="dialog"` and `role="alertdialog"` and `role="tablist"` automatically trigger application mode and hence keyboard limitations/freedoms.
 
-- You can use `role="math"` and `aria-label=""` on a `<div>` that wraps MathML markup with a `<math>` element, but MathML isn't universally supported. Or just use MathJax, which also happens to be able to help with MathML markup support for all browsers.
+- You can use `role="math"` and `aria-label="(description of the math expression)"` on a `<div>` that wraps MathML markup with a `<math>` element, but MathML isn't universally supported. Or just use MathJax, which also happens to be able to help with MathML markup support for all browsers.
   - [MathJax example](https://codepen.io/hchiam/pen/WNpgzMe)
 - `aria-busy="true"` if you want to suppress suppress `aria-live` region announcements (e.g. page load).
 
@@ -336,13 +340,13 @@ Consider: <https://ableplayer.github.io/ableplayer/>
 25. Tooltip Dialog
 26. Tree View
 
-### Links
+### Deque ARIA patterns - Imports
 
 - CSS: `<link rel="stylesheet" href="https://dequeuniversity.com/assets/js/patterns/deque-patterns.min.css">`
 - JS: `<script src="https://dequeuniversity.com/assets/js/patterns/deque-patterns.min.js"></script>`
 - Fonts: <https://dequeuniversity.com/assets/js/patterns/_fonts/MWFMDL2.1.63.ttf> and <https://dequeuniversity.com/assets/js/patterns/_fonts/MWFMDL2.1.63.woff>
 
-### Examples
+### Deque ARIA patterns - Examples
 
 - <https://codepen.io/hchiam/pen/gOmdBBo>
 - <https://codepen.io/hchiam/pen/ExWedQx>
@@ -350,24 +354,40 @@ Consider: <https://ableplayer.github.io/ableplayer/>
 ## Analogy for Accessibility Tree element properties
 
 - Name: `aria-label="Howard"`
-- Description: `aria-label="likes learning"`
+- Description: `aria-description="likes learning"` or `aria-describedby="description_container_id"`
 - Role: `role="software developer"`
 - Property: `start="9" end="5"` (and value)
 - Relationship: `aria-owns="this GitHub account"`
 - State: `aria-selected="true"`
+
+## WCAG notes
+
+- "PGS": 4 Principles --> Guidelines --> SC (Success criteria) --> A, AA, AAA.
 
 ## WCAG-EM notes
 
 - WCAG-EM = [website accessibility conformance evaluation methodology](https://www.w3.org/WAI/test-evaluate/conformance/wcag-em/)
 - [WCAG-EM procedure](https://www.w3.org/TR/WCAG-EM/#procedure)
 - [WCAG-EM report generator](https://www.w3.org/WAI/eval/report-tool)
+
   - Very helpful form! Reminders of all the steps! Auto-adjusts field prompts depending on selected A/AA/AAA level!
-  - Steps:
+  - Steps: "S.E.S.A.R.":
     1. Scope (prioritize, images, forms, tables, widgets, consider to-be-commonly-used templates)
     2. Explore (automated test to cover 30%, then screen reader + browser + device combos)
     3. Sample
     4. Audit sample
     5. Report (say what bug, where, what expect, what breaks for who, how impactful on user+/business+/design-, how repro, visual, how might fix, how easy to fix) = faster to triage and actually fix
+
+- another way to break down the 9 things in the Report:
+  1. what
+  2. where
+  3. who
+  4. what expect
+  5. how impactful (user, business, design)
+  6. how might fix
+  7. how easy fix
+  8. visual
+  9. how repro
 
 ## Various terms to know
 
