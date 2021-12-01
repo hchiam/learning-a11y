@@ -16,6 +16,7 @@ Deque prep course for IAAP WAS: <https://dequeuniversity.com/curriculum/packages
 2. Test realistically: [screen readers](https://www.youtube.com/watch?v=5R-6WvAihms&list=PLNYkxOF6rcICWx0C9LVWWVqvHlYJyqw7g&index=7) + keyboard. Besides mouse and touch. And mobile.
 3. Tab. Shift+Tab. Enter. (And screen reader + arrow keys.)
 4. Checklist/report generator: [WCAG-EM](https://www.w3.org/WAI/eval/report-tool)
+5. WCAG checklist: <https://www.a11yproject.com/checklist>
 
 ## [P.O.U.R.](https://www.w3.org/WAI/WCAG21/Understanding/intro#understanding-the-four-principles-of-accessibility)
 
