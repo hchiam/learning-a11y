@@ -12,7 +12,7 @@ Deque prep course for IAAP WAS: <https://dequeuniversity.com/curriculum/packages
 
 ## Key things
 
-1. Automate what you can: [WAVE](https://chrome.google.com/webstore/detail/wave-evaluation-tool/jbbplnpkjmmeebjpijfedlgcdilocofh) or [axe DevTools for Firefox](https://addons.mozilla.org/en-US/firefox/addon/axe-devtools) or lighthouse or [axe DevTools for Chrome](https://chrome.google.com/webstore/detail/axe-devtools-web-accessib/lhdoppojpmngadmnindnejefpokejbdd) or [axe-linter VSCode extension](https://marketplace.visualstudio.com/items?itemName=deque-systems.vscode-axe-linter).
+1. Automate what you can: [WAVE](https://wave.webaim.org/extension) or [axe DevTools for Firefox](https://addons.mozilla.org/en-US/firefox/addon/axe-devtools) or lighthouse or [axe DevTools for Chrome](https://chrome.google.com/webstore/detail/axe-devtools-web-accessib/lhdoppojpmngadmnindnejefpokejbdd) or [axe-linter VSCode extension](https://marketplace.visualstudio.com/items?itemName=deque-systems.vscode-axe-linter).
 2. Test realistically: [screen readers](https://www.youtube.com/watch?v=5R-6WvAihms&list=PLNYkxOF6rcICWx0C9LVWWVqvHlYJyqw7g&index=7) + keyboard. Besides mouse and touch. And mobile.
 3. Tab. Shift+Tab. Enter. (And screen reader + arrow keys.)
 4. Checklist/report generator: [WCAG-EM](https://www.w3.org/WAI/eval/report-tool)
