@@ -61,6 +61,25 @@ My summary:
 - [Support Both Legacy JS and Modern JS Without Slowing All Browsers](https://codepen.io/hchiam/pen/mdWGLNE)
 - [Deque ARIA patterns CSS+JS](https://codepen.io/hchiam/pen/ExWedQx)
 
+## [COGA (Cognitive Accessibility) guidance](https://www.w3.org/TR/coga-usable/#summary)
+
+- key points = 8 topics: https://www.w3.org/TR/coga-usable/#summary
+- user stories
+- design guide
+- usability testing
+- example personas
+
+**The 8 topics are:**
+
+1) Help users understand what things are and how to use them.
+2) Help users find what they need.
+3) Use clear content (text, images and media).
+4) Help users avoid mistakes.
+5) Help users focus.
+6) Ensure processes do not rely on memory.
+7) Provide help and support.
+8) Support adaptation and personalization.
+
 <details>
 <summary>More notes (click to expand)</summary>
 
