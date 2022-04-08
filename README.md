@@ -80,6 +80,8 @@ My summary:
 7) Provide help and support.
 8) Support adaptation and personalization.
 
+## More notes:
+
 <details>
 <summary>More notes (click to expand)</summary>
 
