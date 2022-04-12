@@ -71,14 +71,14 @@ My summary:
 
 **The 8 topics are:**
 
-1) Help users understand what things are and how to use them.
-2) Help users find what they need.
-3) Use clear content (text, images and media).
-4) Help users avoid mistakes.
-5) Help users focus.
-6) Ensure processes do not rely on memory.
-7) Provide help and support.
-8) Support adaptation and personalization.
+1. Help users understand what things are and how to use them.
+2. Help users find what they need.
+3. Use clear content (text, images and media).
+4. Help users avoid mistakes.
+5. Help users focus.
+6. Ensure processes do not rely on memory.
+7. Provide help and support.
+8. Support adaptation and personalization.
 
 ## More notes:
 
