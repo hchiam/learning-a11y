@@ -229,6 +229,7 @@ Consider: <https://ableplayer.github.io/ableplayer/>
 - [ChromeVox](https://support.google.com/chromebook/answer/7031755) works on Chrome and ChromeOS/Chromebooks.
 - Consider telling users that content is still loading with things like `alt="Content loading"` (but don't go overboard with `aria-live` unless it's a really slow process).
 - Using `visibility: hidden;`, `display: none;`, or attribute `hidden` will hide the element visually but also hides it from screen readers, so you'll need to resort to clipping or positioning or `aria-label` to expose it to screen readers only. See my notes on [hiding elements visually and/or in the Accessibility Tree](https://github.com/hchiam/web-accessibility-course-notes#hidingshowing-only-for-accessibility-tree-at).
+
 - ```css
   /* source: https://webaim.org/techniques/css/invisiblecontent/ */
   .sr-only {
