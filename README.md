@@ -1,14 +1,14 @@
 # Learning Web Accessibility (a11y)
 
-Just one of the things I'm learning. <https://github.com/hchiam/learning>
+Just one of the things I'm learning. https://github.com/hchiam/learning
 
 This repo's link is easier to remember/type. It serves as a redirect to find this repo faster:
 
-<https://github.com/hchiam/web-accessibility-course-notes>
+https://github.com/hchiam/web-accessibility-course-notes
 
 Start with the above link. Extra notes may be added to this repo too.
 
-Deque prep course for IAAP WAS: <https://dequeuniversity.com/curriculum/packages/iaap-was>
+Deque prep course for IAAP WAS: https://dequeuniversity.com/curriculum/packages/iaap-was
 
 ## Key things
 
@@ -16,7 +16,7 @@ Deque prep course for IAAP WAS: <https://dequeuniversity.com/curriculum/packages
 2. Test realistically: [screen readers](https://www.youtube.com/watch?v=5R-6WvAihms&list=PLNYkxOF6rcICWx0C9LVWWVqvHlYJyqw7g&index=7) + keyboard. Besides mouse and touch. And mobile.
 3. Tab. Shift+Tab. Enter. (And screen reader + arrow keys.)
 4. Checklist/report generator: [WCAG-EM](https://www.w3.org/WAI/eval/report-tool)
-5. WCAG checklist: <https://www.a11yproject.com/checklist>
+5. WCAG checklist: https://www.a11yproject.com/checklist
 
 ## [P.O.U.R.](https://www.w3.org/WAI/WCAG21/Understanding/intro#understanding-the-four-principles-of-accessibility)
 
@@ -122,9 +122,9 @@ Literally paste the following [Internet Explorer conditional comment](https://st
 
 ## Media Accessibility Decision Matrix (WCAG Level AA "Must"s)
 
-Reference: <https://codepen.io/cerovac/full/MWKVVYj>
+Reference: https://codepen.io/cerovac/full/MWKVVYj
 
-Consider: <https://ableplayer.github.io/ableplayer/>
+Consider: https://ableplayer.github.io/ableplayer/
 
 | Media                   | Captions | Transcript | Audio Descriptions | Sign Language |
 | ----------------------- | -------- | ---------- | ------------------ | ------------- |
@@ -197,8 +197,8 @@ Consider: <https://ableplayer.github.io/ableplayer/>
 - Tell screen reader users of required fields with `aria-required="true"`. The alternative is the `<... required>` attribute, which adds browser behaviour, but does so inconsistently, and may conflict with your custom form validation behaviours. Either way, also include visual indicators for sighted users.
 - `aria-invalid="true"` and `aria-describedby="error_description"` on the inputs
 - `<a href="#email">Go to the first field with an error to fix it.</a>`
-- `autocomplete="current-password"` - see <https://www.w3.org/TR/WCAG21/#input-purposes>
-- Example: <https://dequeuniversity.com/assets/html/module-forms/progressive/good/index.html>
+- `autocomplete="current-password"` - see https://www.w3.org/TR/WCAG21/#input-purposes
+- Example: https://dequeuniversity.com/assets/html/module-forms/progressive/good/index.html
 - Custom form element: make sure it has a Name, Role, and Attribute (i.e. Label, Role, and State.). Anything that can't be communicated via those things should go into an `aria-live` region.
 - Confirm before submitting (and enable fixing).
 - Confirm after submitting (set focus _after_ page load to avoid issues with parsing timing).
@@ -381,12 +381,12 @@ Consider: <https://ableplayer.github.io/ableplayer/>
 
 - CSS: `<link rel="stylesheet" href="https://dequeuniversity.com/assets/js/patterns/deque-patterns.min.css">`
 - JS: `<script src="https://dequeuniversity.com/assets/js/patterns/deque-patterns.min.js"></script>`
-- Fonts: <https://dequeuniversity.com/assets/js/patterns/_fonts/MWFMDL2.1.63.ttf> and <https://dequeuniversity.com/assets/js/patterns/_fonts/MWFMDL2.1.63.woff>
+- Fonts: https://dequeuniversity.com/assets/js/patterns/_fonts/MWFMDL2.1.63.ttf and https://dequeuniversity.com/assets/js/patterns/_fonts/MWFMDL2.1.63.woff
 
 ### Deque ARIA patterns - Examples
 
-- <https://codepen.io/hchiam/pen/gOmdBBo>
-- <https://codepen.io/hchiam/pen/ExWedQx>
+- https://codepen.io/hchiam/pen/gOmdBBo
+- https://codepen.io/hchiam/pen/ExWedQx
 
 ## Analogy for Accessibility Tree element properties
 
