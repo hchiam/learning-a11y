@@ -326,6 +326,10 @@ Consider: https://ableplayer.github.io/ableplayer/
 
 - note: bigger text is not necessarily always better, e.g. people with "tunnel vision" may prefer small font and tighter line spacing - https://learning.edx.org/course/course-v1:W3Cx+WAI0.1x+3T2019/home - take-away: flexibility!
 
+## Note on physical impairments
+
+- note: let users disable/customize single-key keyboard shortcuts to avoid voice-only users accidentally triggering multiple keyboard shortcuts with one word of a voice command (aside from self: getting surprised by keyboard shortcuts I didn't expect to exist or want to trigger) - https://learning.edx.org/course/course-v1:W3Cx+WAI0.1x+3T2019/home - take-away: flexibility!
+
 ## Notes on ARIA roles
 
 - Ctrl+F or Cmd+F for ARIA roles and ARIA attributes in this [Role Data Model](https://www.w3.org/TR/wai-aria/img/rdf_model.svg)
