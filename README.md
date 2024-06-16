@@ -330,6 +330,13 @@ Consider: https://ableplayer.github.io/ableplayer/
 
 - note: let users disable/customize single-key keyboard shortcuts to avoid voice-only users accidentally triggering multiple keyboard shortcuts with one word of a voice command (aside from self: getting surprised by keyboard shortcuts I didn't expect to exist or want to trigger) - https://learning.edx.org/course/course-v1:W3Cx+WAI0.1x+3T2019/home - take-away: flexibility!
 
+## Notes on screen magnification
+
+- from https://learning.edx.org/course/course-v1:W3Cx+WAI0.1x+3T2019/home
+  - screen changes in other parts of the page should still be notified to screen magnification users
+  - key content should not be contained in hover states or tooltips, especially if it's hard for screen magnification users to see on-screen
+  - position priority content where users expect it
+
 ## Notes on ARIA roles
 
 - Ctrl+F or Cmd+F for ARIA roles and ARIA attributes in this [Role Data Model](https://www.w3.org/TR/wai-aria/img/rdf_model.svg)
