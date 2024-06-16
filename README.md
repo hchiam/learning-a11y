@@ -322,6 +322,10 @@ Consider: https://ableplayer.github.io/ableplayer/
   </form>
   ```
 
+## Note on visual disabilities
+
+- note: bigger text is not necessarily always better, e.g. people with "tunnel vision" may prefer small font and tighter line spacing - https://learning.edx.org/course/course-v1:W3Cx+WAI0.1x+3T2019/home - take-away: flexibility!
+
 ## Notes on ARIA roles
 
 - Ctrl+F or Cmd+F for ARIA roles and ARIA attributes in this [Role Data Model](https://www.w3.org/TR/wai-aria/img/rdf_model.svg)
