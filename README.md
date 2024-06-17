@@ -513,4 +513,8 @@ Test yourself:
 
 </details>
 
+## Policy examples and templates for your company
+
+https://www.w3.org/WAI/planning/org-policies/#examples
+
 </details>
