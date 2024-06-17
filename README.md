@@ -368,6 +368,10 @@ Consider: https://ableplayer.github.io/ableplayer/
   - [MathJax example](https://codepen.io/hchiam/pen/WNpgzMe)
 - `aria-busy="true"` if you want to suppress suppress `aria-live` region announcements (e.g. page load).
 
+- tabs:
+  - `role="tablist"` contains `role="tab"` which controls display of `role="tabpanel"`
+  - `aria-selected="true"` the current tab (`role="tab"`)
+
 ## Deque ARIA patterns
 
 1. Alert
