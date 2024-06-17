@@ -515,6 +515,8 @@ Test yourself:
 
 ## Policy examples and templates for your company
 
-https://www.w3.org/WAI/planning/org-policies/#examples
+- simple: https://www.w3.org/WAI/planning/org-policies/#examples
+
+- comprehensive: https://www.w3.org/WAI/planning/org-policies/example/
 
 </details>
