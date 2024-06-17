@@ -519,4 +519,18 @@ Test yourself:
 
 - comprehensive: https://www.w3.org/WAI/planning/org-policies/example/
 
+## Accessibility statement generator
+
+- https://www.w3.org/WAI/planning/statements/generator/#create
+  - minimal example: https://www.w3.org/WAI/planning/statements/minimal-example/
+  - complete example: https://www.w3.org/WAI/planning/statements/complete-example/
+- consider including:
+  - commitment
+  - contact info for issues
+  - known limitations (to avoid frustrations)
+  - measures to ensure accessibility
+  - technical requirements like supported browsers
+  - environments tested to work in
+  - references to applicable local and national laws and policies
+
 </details>
