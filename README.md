@@ -338,6 +338,10 @@ Consider: https://ableplayer.github.io/ableplayer/
   - key content should not be contained in hover states or tooltips, especially if it's hard for screen magnification users to see on-screen
   - position priority content where users expect it
 
+## Note on page titles (browser tab title)
+
+- note: "front-load" when you can, i.e. unique and most important info first (think: what shows up in the browser tab, to keep it unique) - https://learning.edx.org/course/course-v1:W3Cx+WAI0.1x+3T2019/home
+
 ## Notes on ARIA roles
 
 - Ctrl+F or Cmd+F for ARIA roles and ARIA attributes in this [Role Data Model](https://www.w3.org/TR/wai-aria/img/rdf_model.svg)
