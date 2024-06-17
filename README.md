@@ -17,7 +17,7 @@ Deque prep course for IAAP WAS: https://dequeuniversity.com/curriculum/packages/
 3. Tab. Shift+Tab. Enter. (And screen reader + arrow keys.)
 4. Resize page zoom to look for text reflow/overflow bugs.
 5. Checklist/report generator: [WCAG-EM](https://www.w3.org/WAI/eval/report-tool)
-6. WCAG checklist: https://www.a11yproject.com/checklist
+6. WCAG checklist: https://www.a11yproject.com/checklist or https://www.w3.org/WAI/WCAG22/quickref/?versions=2.1
 
 ## [P.O.U.R.](https://www.w3.org/WAI/WCAG21/Understanding/intro#understanding-the-four-principles-of-accessibility)
 
