@@ -342,6 +342,29 @@ Consider: https://ableplayer.github.io/ableplayer/
 
 - note: "front-load" when you can, i.e. unique and most important info first (think: what shows up in the browser tab, to keep it unique) - https://learning.edx.org/course/course-v1:W3Cx+WAI0.1x+3T2019/home
 
+## Note on `disabled` buttons and inputs
+
+- [css-tricks](https://css-tricks.com/making-disabled-buttons-more-inclusive/) recommends `aria-disabled="true"` and JS to prevent clicks by pointers or keyboards
+- but I'd consider this jQuery helper function I wrote:
+  ```js
+  /**
+  Don't disable submit button (screenreader user: unaware skipped; sighted user: must realize must hunt for errors).  
+  Don't disable inputs like textareas or select dropdowns: screen readers can't tab to it to read the value!
+  TODO: make this work for radios and checkboxes
+  */
+  function editDisabled(scope, isEditDisabled) {
+      const elements = $(scope.is(':input') ? scope : $()).add(scope.find(':input'));
+      elements
+          .removeAttr('disabled').prop('disabled', false) // to enable tab focus
+          .prop('readonly', isEditDisabled) // to disable edits without disabling focus
+          .attr('edit-disabled', ''); // to disable clicks
+      elements.find('option')
+          .toggle(!isEditDisabled); // to prevent showing and changing select dropdown options
+  }
+  var scope = $('.modal:visible :input:disabled');
+  editDisabled(scope, true);
+  ```
+
 ## Notes on ARIA roles
 
 - Ctrl+F or Cmd+F for ARIA roles and ARIA attributes in this [Role Data Model](https://www.w3.org/TR/wai-aria/img/rdf_model.svg)
