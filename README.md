@@ -345,14 +345,14 @@ Consider: https://ableplayer.github.io/ableplayer/
 ## Note on `disabled` buttons and inputs
 
 - [css-tricks](https://css-tricks.com/making-disabled-buttons-more-inclusive/) recommends `aria-disabled="true"` and JS to prevent clicks by pointers or keyboards
-- but I'd consider this jQuery helper function I wrote:
+- but I'd consider this jQuery helper function I wrote: ([demo of `disableEditing`](https://codepen.io/hchiam/pen/jOoZZEW?editors=1010))
   ```js
   /**
   Don't disable submit button (screenreader user: unaware skipped; sighted user: must realize must hunt for errors).  
   Don't disable inputs like textareas or select dropdowns: screen readers can't tab to it to read the value!
   TODO: make this work for radios and checkboxes
   */
-  function editDisabled(scope, isEditDisabled) {
+  function disableEditing(scope, isEditDisabled) {
       const elements = $(scope.is(':input') ? scope : $()).add(scope.find(':input'));
       elements
           .removeAttr('disabled').prop('disabled', false) // to enable tab focus
