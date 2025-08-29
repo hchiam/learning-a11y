@@ -246,6 +246,28 @@ Consider: https://ableplayer.github.io/ableplayer/
   }
   ```
 
+Windows Narrator update notes:
+
+https://support.microsoft.com/en-us/windows/complete-guide-to-narrator-e4397a0d-ef4f-b386-d8ae-c172f109bdb1#windowsversion=windows_11
+
+- N to skip past links (mnemonic: "N is for Next after link")
+- L to jump to list (mnemonic: "L is for list, not for link - you can already tab to get to links")
+- G to jump to graphic (like an image)
+
+<img width="538" height="395" alt="image - see the notes and link above" src="https://github.com/user-attachments/assets/15108a4e-fbef-443a-9fb3-1252680c9fa7" />
+
+- Narrator key (like caps lock) + Ctrl + D: to get image description (mnemonic: "D is for describe")
+
+<img width="542" height="442" alt="image - see the note and link above" src="https://github.com/user-attachments/assets/bc035be4-025c-4826-a68a-240abcf890d6" />
+
+Narrator output recap:
+
+- Narrator key (like caps lock) + Alt + X
+
+<img width="534" height="237" alt="image - see the note above" src="https://github.com/user-attachments/assets/3bfb6f5b-9826-47f1-8479-542c0b3d90f7" />
+
+<img width="540" height="250" alt="image - see the note above" src="https://github.com/user-attachments/assets/d56d9716-6738-4cef-b9fc-3889bcef81d9" />
+
 ## Notes on new content or SPAs (Single-Page Apps)
 
 - "Please wait" message (or new content for SPAs): focus on it or `aria-live` it. Plan some shared method to manage focus or to announce link/route events. Consider intentional pause before resetting focus, in case the delay is shorter than expected (consider "Please wait. Here's some content that already loaded but sounds like part of the interstitial message.") and to avoid timing issues.
