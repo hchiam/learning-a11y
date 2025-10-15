@@ -206,6 +206,7 @@ Consider: https://ableplayer.github.io/ableplayer/
 - Consider indicating form success/error in `<title>` = first thing user hears on new page.
 - Consider `aria-live` with 2-second debounce for "password strength messages". (On blur won't work because the new focus will likely get announced instead.)
 - Tab, Shift + Tab, Enter/Spacebar, arrow keys, (for `<select>`:) Alt/Option + Down arrow and then arrow keys and then Enter
+- show **error messages ABOVE text input** instead of BELOW - because autofill or tooltip or mobile keyboard can cover it
 
 ## Notes on screen readers
 
