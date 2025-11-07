@@ -13,7 +13,7 @@ Deque prep course for IAAP WAS: https://dequeuniversity.com/curriculum/packages/
 ## Key things
 
 1. Automate what you can: [WAVE](https://wave.webaim.org/extension) or [axe DevTools for Firefox](https://addons.mozilla.org/en-US/firefox/addon/axe-devtools) or lighthouse or [axe DevTools for Chrome](https://chrome.google.com/webstore/detail/axe-devtools-web-accessib/lhdoppojpmngadmnindnejefpokejbdd) or [axe-linter VSCode extension](https://marketplace.visualstudio.com/items?itemName=deque-systems.vscode-axe-linter).
-2. Test realistically: [screen readers](https://www.youtube.com/watch?v=5R-6WvAihms&list=PLNYkxOF6rcICWx0C9LVWWVqvHlYJyqw7g&index=7) + keyboard. Besides mouse and touch. And mobile.
+2. Test realistically: [screen readers](https://www.youtube.com/watch?v=5R-6WvAihms&list=PLNYkxOF6rcICWx0C9LVWWVqvHlYJyqw7g&index=7) (or voice control) + keyboard. Besides mouse and touch. And mobile.
 3. Tab. Shift+Tab. Enter. (And screen reader + arrow keys.)
 4. Resize page zoom to look for text reflow/overflow bugs.
 5. Checklist/report generator: [WCAG-EM](https://www.w3.org/WAI/eval/report-tool)
@@ -268,6 +268,31 @@ Narrator output recap:
 <img width="534" height="237" alt="image - see the note above" src="https://github.com/user-attachments/assets/3bfb6f5b-9826-47f1-8479-542c0b3d90f7" />
 
 <img width="540" height="250" alt="image - see the note above" src="https://github.com/user-attachments/assets/d56d9716-6738-4cef-b9fc-3889bcef81d9" />
+
+## Notes on voice control
+
+Windows computers' built-in dictation software: On Windows 11, the tool is named "Voice Access".
+
+You can set it up with the Window button and then searching for "Voice Access".
+
+The correct search result should have an icon like this:
+
+<img width="125" height="95" alt="Voice access icon looks like a user icon with some sort of voice signal emanating from the head" src="https://github.com/hchiam/learning-a11y/blob/main/Voice_access_icon.png" />
+
+Microsoft’s official guides have lots of detail, but I’ll provide a short list of helpful commands below too:
+
+https://support.microsoft.com/en-us/topic/get-started-with-voice-access-bd2aa2dc-46c2-486c-93ae-3d75f7d053a4
+
+https://support.microsoft.com/en-us/topic/voice-access-command-list-dac0f091-87ce-454d-8d57-bef38d3d8563
+
+- "unmute"
+- "mute"
+- "show grid", then say a number to get more specific grids like in Dragon, then say things like "move mouse up" to tweak the final mouse pointer position, and then say "click".
+- "show numbers", and then saying the number can click the element. Note that I find this harder to use with numbers over 20, so I personally end up using the mouse grid more often.
+- "undo"
+- "what can I say"
+
+If you only need to type, there's also this: https://support.microsoft.com/en-us/windows/use-voice-typing-to-talk-instead-of-type-on-your-pc-fec94565-c4bd-329d-e59a-af033fa5689f#windowsversion=windows_11
 
 ## Notes on new content or SPAs (Single-Page Apps)
 
